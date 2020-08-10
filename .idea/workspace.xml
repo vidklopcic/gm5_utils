@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gm5_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gm5_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,32 @@
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
     </task>
+    <task id="LOCAL-00001" summary="timestamp, updated subscriptions">
+      <created>1595323634643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595323634643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="timestamp, updated subscriptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="timestamp, updated subscriptions" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="643" y="243" key="CommitChangelistDialog2" timestamp="1595323634549">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323634549" />
+    <state x="205" y="117" key="DiffContextDialog" timestamp="1595323627375">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="205" y="117" key="DiffContextDialog/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323627375" />
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1595323635452">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323635452" />
   </component>
 </project>
