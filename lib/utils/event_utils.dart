@@ -15,4 +15,18 @@ class EventUtils {
 
     debounceTimeouts[key] = timer;
   }
+
+  void throttle(int period, Function target, {key, List arguments}) {
+    key = key ?? target;
+    if (debounceTimeouts[key]?.isActive ?? false) {
+      return;
+    }
+
+    Timer timer = Timer(Duration(milliseconds: period), () {
+      Function.apply(target, arguments ?? []);
+    });
+
+    debounceTimeouts[key] = timer;
+  }
+
 }
