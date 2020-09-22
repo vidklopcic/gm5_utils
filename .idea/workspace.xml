@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/components/better_dropdown.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/better_dropdown.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/better_dropdown.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,32 +64,42 @@
       <option name="project" value="LOCAL" />
       <updated>1600338565667</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add better dropdown">
+      <created>1600778339536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600778339536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="timestamp, updated subscriptions" />
     <MESSAGE value="commit missing files" />
     <MESSAGE value="add throttle method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add throttle method" />
+    <MESSAGE value="add better dropdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="add better dropdown" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="643" y="243" key="CommitChangelistDialog2" timestamp="1600338565567">
+    <state x="643" y="243" key="CommitChangelistDialog2" timestamp="1600778339408">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338565567" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323634549" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462740378" />
+    <state x="643" y="243" key="CommitChangelistDialog2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600778339408" />
     <state x="205" y="117" key="DiffContextDialog" timestamp="1595323627375">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="205" y="117" key="DiffContextDialog/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323627375" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1600338566708">
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1600778340290">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338566708" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323635452" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462741043" />
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600778340290" />
     <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1600154054232">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
