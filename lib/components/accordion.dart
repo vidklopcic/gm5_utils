@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-typedef GM5AccordionChange(int index, GM5AccordionItem item);
+typedef void GM5AccordionChange(int index, GM5AccordionItem item);
 
 class GM5Accordion extends StatefulWidget {
   final List<GM5AccordionItem> items;
@@ -10,14 +10,16 @@ class GM5Accordion extends StatefulWidget {
   final double animationDuration;
   final Color headerColor;
   final int initialIndex;
+  final double spacing;
 
-  const GM5Accordion(
-      {Key key,
-      @required this.items,
-      this.onChange,
-      this.animationDuration,
-      this.collapseAlignment = Alignment.topCenter,
-      this.headerColor, this.initialIndex=0})
+  const GM5Accordion({Key key,
+    @required this.items,
+    this.onChange,
+    this.spacing = 2,
+    this.animationDuration,
+    this.collapseAlignment = Alignment.topCenter,
+    this.headerColor,
+    this.initialIndex = 0})
       : super(key: key);
 
   @override
@@ -36,7 +38,7 @@ class _GM5AccordionState extends State<GM5Accordion> {
 
   Widget _builder(BuildContext context, BoxConstraints constraints) {
     final double headersHeight = widget.items.map((e) => e.headerHeight).reduce((a, b) => a + b);
-    final double contentHeight = constraints.maxHeight - headersHeight;
+    final double contentHeight = constraints.maxHeight - headersHeight - (widget.items.length - 1) * widget.spacing;
     assert(contentHeight > 0);
 
     List<Widget> children = [];
@@ -53,28 +55,39 @@ class _GM5AccordionState extends State<GM5Accordion> {
     final item = widget.items[index];
     final expanded = index == selected;
     return [
-      Material(
-        type: widget.headerColor == null ? MaterialType.transparency : MaterialType.canvas,
-        color: widget.headerColor,
-        child: InkWell(
-          onTap: () => selectItem(index),
-          child: SizedBox(
-            width: width,
-            height: item.headerHeight,
-            child: item.header,
+      SizedBox(
+        width: width,
+        height: item.headerHeight,
+        child: Padding(
+          padding: EdgeInsets.only(top: index == 0 ? 0 : widget.spacing),
+          child: Material(
+            type: widget.headerColor == null ? MaterialType.transparency : MaterialType.canvas,
+            color: widget.headerColor,
+            child: item.headerBuilder != null
+                ? item.headerBuilder(context, () => selectItem(index))
+                : InkWell(
+              onTap: () => selectItem(index),
+              child: item.header,
+            ),
           ),
         ),
       ),
-      AnimatedContainer(
-        curve: Curves.easeInOutCubic,
-        height: expanded ? contentHeight : 0,
-        duration: widget.animationDuration ?? Duration(milliseconds: 300),
-        child: OverflowBox(
-          alignment: widget.collapseAlignment,
-          child: SizedBox(
-            width: width,
-            height: contentHeight,
-            child: item.content,
+      ClipRect(
+        child: AnimatedContainer(
+          curve: Curves.easeInOutCubic,
+          height: expanded ? contentHeight : 0,
+          duration: widget.animationDuration ?? Duration(milliseconds: 300),
+          child: OverflowBox(
+            minWidth: width,
+            maxWidth: width,
+            minHeight: contentHeight,
+            maxHeight: contentHeight,
+            alignment: widget.collapseAlignment,
+            child: SizedBox(
+              width: width,
+              height: contentHeight,
+              child: item.content,
+            ),
           ),
         ),
       ),
@@ -94,10 +107,14 @@ class _GM5AccordionState extends State<GM5Accordion> {
   }
 }
 
+typedef GM5AccordionHeaderBuilder = Widget Function(BuildContext context, VoidCallback onSelect);
+
 class GM5AccordionItem {
   final double headerHeight;
   final Widget header;
+  final GM5AccordionHeaderBuilder headerBuilder;
   final Widget content;
 
-  GM5AccordionItem({this.headerHeight = 44, @required this.header, @required this.content});
+  GM5AccordionItem({this.headerHeight = 44, this.header, @required this.content, this.headerBuilder})
+      : assert(headerBuilder != null || header != null);
 }
