@@ -29,4 +29,15 @@ class EventUtils {
     debounceTimeouts[key] = timer;
   }
 
+  void dropAbove(int period, Function target, {key, List arguments}) {
+    key = key ?? target;
+    if (debounceTimeouts[key]?.isActive ?? false) {
+      return;
+    }
+
+    Timer timer = Timer(Duration(milliseconds: period), () => null);
+    debounceTimeouts[key] = timer;
+    Function.apply(target, arguments ?? []);
+  }
+
 }

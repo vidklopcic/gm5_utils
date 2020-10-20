@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/components/autoload_listview.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/extended_functionality/http_client.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/date_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/better_expansion_tile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/conditional.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/fade_indexed_stack.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extended_functionality/collections.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extended_functionality/context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/input_formatters/validators.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/accordion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/accordion.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/delayed_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/delayed_builder.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gm5_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gm5_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/event_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/event_utils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +36,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/input_formatters" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/input_formatters" />
+      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
       <recent name="$PROJECT_DIR$/lib/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
+      <recent name="$PROJECT_DIR$/lib/mixins" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -105,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600871965517</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="http client, accordion, delayed builder, date utils">
+      <created>1601141297979</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601141297979</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,18 +127,20 @@
     <MESSAGE value="add better dropdown" />
     <MESSAGE value="custom dropdown is working" />
     <MESSAGE value="added accordion and delayed builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="added accordion and delayed builder" />
+    <MESSAGE value="http client, accordion, delayed builder" />
+    <MESSAGE value="http client, accordion, delayed builder, date utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="http client, accordion, delayed builder, date utils" />
   </component>
   <component name="WindowStateProjectService">
     <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600867354415">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600867354415" />
-    <state x="463" y="-1167" key="CommitChangelistDialog2" timestamp="1601141274410">
+    <state x="463" y="-1167" key="CommitChangelistDialog2" timestamp="1601141297873">
       <screen x="-341" y="-1440" width="2560" height="1440" />
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338565567" />
-    <state x="463" y="-1167" key="CommitChangelistDialog2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141274410" />
+    <state x="463" y="-1167" key="CommitChangelistDialog2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141297873" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323634549" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462740378" />
     <state x="643" y="243" key="CommitChangelistDialog2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871965415" />
@@ -134,10 +148,27 @@
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="205" y="117" key="DiffContextDialog/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323627375" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1600871966080">
+    <state width="2006" height="446" key="GridCell.Tab.0.bottom" timestamp="1602141446528">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
+    <state width="2006" height="446" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446528" />
+    <state width="2006" height="446" key="GridCell.Tab.0.center" timestamp="1602141446527">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="446" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446527" />
+    <state width="2006" height="446" key="GridCell.Tab.0.left" timestamp="1602141446526">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="446" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446526" />
+    <state width="2006" height="446" key="GridCell.Tab.0.right" timestamp="1602141446527">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="446" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446527" />
+    <state x="439" y="-1012" key="Vcs.Push.Dialog.v2" timestamp="1601141298473">
+      <screen x="-341" y="-1440" width="2560" height="1440" />
+    </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338566708" />
+    <state x="439" y="-1012" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141298473" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323635452" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462741043" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871966080" />
@@ -149,10 +180,10 @@
       <screen x="-341" y="-1440" width="2560" height="1440" />
     </state>
     <state x="719" y="-796" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141284974" />
-    <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1600154054232">
+    <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1602426937106">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1600154054232" />
+    <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1602426937106" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup" timestamp="1601044872661">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
