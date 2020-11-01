@@ -39,5 +39,4 @@ class EventUtils {
     debounceTimeouts[key] = timer;
     Function.apply(target, arguments ?? []);
   }
-
 }
