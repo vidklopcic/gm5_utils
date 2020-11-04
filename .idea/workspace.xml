@@ -144,14 +144,9 @@
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338565567" />
     <state x="463" y="-1167" key="CommitChangelistDialog2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141297873" />
-    <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323634549" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462740378" />
     <state x="643" y="261" key="CommitChangelistDialog2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180577605" />
     <state x="643" y="243" key="CommitChangelistDialog2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871965415" />
-    <state x="205" y="117" key="DiffContextDialog" timestamp="1595323627375">
-      <screen x="0" y="0" width="2048" height="1280" />
-    </state>
-    <state x="205" y="117" key="DiffContextDialog/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323627375" />
     <state width="2006" height="446" key="GridCell.Tab.0.bottom" timestamp="1602141446528">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
@@ -173,7 +168,6 @@
     </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338566708" />
     <state x="439" y="-1012" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141298473" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-409.-1440.2560.1440@0.0.2048.1280" timestamp="1595323635452" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1599462741043" />
     <state x="624" y="397" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180578588" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871966080" />
@@ -185,10 +179,10 @@
       <screen x="-341" y="-1440" width="2560" height="1440" />
     </state>
     <state x="719" y="-796" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141284974" />
-    <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1603216062152">
+    <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1604481457618">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1603216062152" />
+    <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1604481457618" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup" timestamp="1603551839730">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
