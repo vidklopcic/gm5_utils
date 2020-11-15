@@ -6,6 +6,8 @@ class DecimalTextInputFormatter extends TextInputFormatter {
   final double min;
   final double max;
 
+  String _lastValue;
+
   DecimalTextInputFormatter({this.decimalRange, this.separator = ',', this.min, this.max})
       : assert(decimalRange == null || decimalRange >= 0);
 
@@ -55,6 +57,9 @@ class DecimalTextInputFormatter extends TextInputFormatter {
         composing: TextRange.empty,
       );
     }
+    _lastValue = truncated;
     return newValue;
   }
+
+  double get value => double.tryParse(_lastValue?.replaceAll(separator, '.') ?? '');
 }
