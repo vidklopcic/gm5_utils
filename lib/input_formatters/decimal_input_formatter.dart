@@ -51,6 +51,7 @@ class DecimalTextInputFormatter extends TextInputFormatter {
         }
       }
 
+      _lastValue = truncated;
       return TextEditingValue(
         text: truncated,
         selection: newSelection,
