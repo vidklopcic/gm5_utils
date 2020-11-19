@@ -311,7 +311,6 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
 
   void setItems(List<BetterDropdownMenuItem<T>> newItems) {
     items = newItems;
-    updateItems();
   }
 
   VoidCallback updateItems;
