@@ -112,7 +112,7 @@ class _DropdownMenuState<T> extends State<_DropdownMenu<T>> {
       curve: const Interval(0.25, 0.5),
       reverseCurve: const Threshold(0.0),
     );
-    widget.route.updateItems = () => setState(() {});
+    widget.route.updateItems = () => WidgetsBinding.instance.addPostFrameCallback((timeStamp) => setState(() {}));
   }
 
   @override
@@ -311,6 +311,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
 
   void setItems(List<BetterDropdownMenuItem<T>> newItems) {
     items = newItems;
+    updateItems();
   }
 
   VoidCallback updateItems;
