@@ -12,8 +12,8 @@ class BetterExpansionTile extends StatefulWidget {
     this.child,
     this.trailing,
     this.initiallyExpanded: false,
-  })
-      : assert(initiallyExpanded != null),
+    this.canExpand = true,
+  })  : assert(initiallyExpanded != null),
         super(key: key);
 
   final Widget leading;
@@ -23,6 +23,7 @@ class BetterExpansionTile extends StatefulWidget {
   final Color backgroundColor;
   final Widget trailing;
   final bool initiallyExpanded;
+  final bool canExpand;
 
   @override
   BetterExpansionTileState createState() => new BetterExpansionTileState();
@@ -53,8 +54,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
     _backgroundColor = new ColorTween();
 
     _isExpanded = PageStorage.of(context)?.readState(context) ?? widget.initiallyExpanded;
-    if (_isExpanded)
-      _controller.value = 1.0;
+    if (_isExpanded) _controller.value = 1.0;
   }
 
   @override
@@ -76,6 +76,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
   }
 
   void _setExpanded(bool isExpanded) {
+    if (!widget.canExpand) return;
     if (_isExpanded != isExpanded) {
       setState(() {
         _isExpanded = isExpanded;
@@ -105,8 +106,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
           border: new Border(
             top: new BorderSide(color: borderSideColor),
             bottom: new BorderSide(color: borderSideColor),
-          )
-      ),
+          )),
       child: new Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -116,17 +116,16 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
               onTap: toggle,
               leading: widget.leading,
               title: new DefaultTextStyle(
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .subhead
-                    .copyWith(color: titleColor),
+                style: Theme.of(context).textTheme.subhead.copyWith(color: titleColor),
                 child: widget.title,
               ),
-              trailing: widget.trailing ?? new RotationTransition(
-                turns: _iconTurns,
-                child: const Icon(Icons.expand_more),
-              ),
+              trailing: widget.trailing ??
+                  (widget.canExpand
+                      ? RotationTransition(
+                          turns: _iconTurns,
+                          child: const Icon(Icons.expand_more),
+                        )
+                      : Offstage()),
             ),
           ),
           new ClipRect(
@@ -158,5 +157,11 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
       builder: _buildChildren,
       child: closed ? null : widget.child,
     );
+  }
+
+  @override
+  void didUpdateWidget(covariant BetterExpansionTile oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.canExpand != widget.canExpand && !widget.canExpand) collapse();
   }
 }
