@@ -281,6 +281,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
     this.theme,
     this.backgroundColor,
     this.dialogBarrierColor,
+    this.dialogBarrierDismissible,
     @required this.style,
     this.barrierLabel,
   }) : assert(style != null);
@@ -296,6 +297,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
   final Offset offset;
   final Color backgroundColor;
   final Color dialogBarrierColor;
+  final bool dialogBarrierDismissible;
 
   ScrollController scrollController;
 
@@ -303,7 +305,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
   Duration get transitionDuration => _kDropdownMenuDuration;
 
   @override
-  bool get barrierDismissible => true;
+  bool get barrierDismissible => dialogBarrierDismissible;
 
   @override
   Color get barrierColor => dialogBarrierColor;
@@ -395,6 +397,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
     this.offset = const Offset(0, 0),
     this.backgroundColor,
     this.barrierColor,
+    this.barrierDismissible = true,
     this.buttonColor,
     this.iconSize = 24.0,
     this.isDense = false,
@@ -424,6 +427,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
   final Offset offset;
   final Color backgroundColor;
   final Color barrierColor;
+  final bool barrierDismissible;
   final Color buttonColor;
 
   /// The z-coordinate at which to place the menu when open.
@@ -461,7 +465,6 @@ class BetterDropdownButton<T> extends StatefulWidget {
 class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with WidgetsBindingObserver {
   int _selectedIndex;
   _DropdownRoute<T> _dropdownRoute;
-
 
   @override
   void initState() {
@@ -520,19 +523,19 @@ class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with Widget
     assert(_dropdownRoute == null);
     setState(() {
       _dropdownRoute = new _DropdownRoute<T>(
-        items: widget.items,
-        width: widget.width,
-        offset: widget.offset,
-        backgroundColor: widget.backgroundColor,
-        buttonRect: menuMargin.resolve(textDirection).inflateRect(itemRect),
-        padding: _kMenuItemPadding.resolve(textDirection),
-        selectedIndex: -1,
-        elevation: widget.elevation,
-        theme: Theme.of(context),
-        style: _textStyle,
-        barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
-        dialogBarrierColor: widget.barrierColor
-      );
+          items: widget.items,
+          width: widget.width,
+          offset: widget.offset,
+          backgroundColor: widget.backgroundColor,
+          buttonRect: menuMargin.resolve(textDirection).inflateRect(itemRect),
+          padding: _kMenuItemPadding.resolve(textDirection),
+          selectedIndex: -1,
+          elevation: widget.elevation,
+          theme: Theme.of(context),
+          style: _textStyle,
+          barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
+          dialogBarrierColor: widget.barrierColor,
+          dialogBarrierDismissible: widget.barrierDismissible);
     });
 
     Navigator.push(context, _dropdownRoute).then<void>((_DropdownRouteResult<T> newValue) {
