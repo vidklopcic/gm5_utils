@@ -10,17 +10,20 @@ class GM5Accordion extends StatefulWidget {
   final double animationDuration;
   final Color headerColor;
   final int initialIndex;
+  final bool toggleMode;
   final double spacing;
 
-  const GM5Accordion({Key key,
+  const GM5Accordion({
+    Key key,
     @required this.items,
     this.onChange,
     this.spacing = 2,
     this.animationDuration,
     this.collapseAlignment = Alignment.topCenter,
     this.headerColor,
-    this.initialIndex = 0})
-      : super(key: key);
+    this.initialIndex = 0,
+    this.toggleMode = false,
+  }) : super(key: key);
 
   @override
   _GM5AccordionState createState() => _GM5AccordionState();
@@ -66,9 +69,9 @@ class _GM5AccordionState extends State<GM5Accordion> {
             child: item.headerBuilder != null
                 ? item.headerBuilder(context, () => selectItem(index), expanded)
                 : InkWell(
-              onTap: () => selectItem(index),
-              child: item.header,
-            ),
+                    onTap: () => selectItem(index),
+                    child: item.header,
+                  ),
           ),
         ),
       ),
@@ -96,7 +99,11 @@ class _GM5AccordionState extends State<GM5Accordion> {
 
   void selectItem(int index) {
     setState(() {
-      selected = index;
+      if (widget.toggleMode && selected == index) {
+        selected = null;
+      } else {
+        selected = index;
+      }
     });
   }
 
