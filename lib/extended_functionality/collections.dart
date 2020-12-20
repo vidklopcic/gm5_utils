@@ -25,7 +25,7 @@ extension NullListExtension<T> on List<T> {
     delimiter ??= '';
     return '$prefix${this.join('$delimiter$prefix')}';
   }
-  
+
   List<T> trySublist(int start, [int end, onError = const []]) {
     int len = length;
     if (start >= len) return onError;
@@ -38,13 +38,8 @@ extension NullListExtension<T> on List<T> {
   }
 
   void move(int from, int to) {
-    if (to == from)return;
-    if (from > to) {
-      insert(to, this[from]);
-      this.remove(from);
-    } else {
-      insert(to, this.removeAt(from));
-    }
+    if (to == from) return;
+    insert(to, this.removeAt(from));
   }
 }
 
