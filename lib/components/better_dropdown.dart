@@ -387,7 +387,6 @@ class BetterDropdownButton<T> extends StatefulWidget {
     @required this.items,
     this.value,
     this.hint,
-    @required this.onChanged,
     this.elevation = 8,
     this.style,
     this.width = 300,
@@ -421,9 +420,6 @@ class BetterDropdownButton<T> extends StatefulWidget {
   final Offset offset;
   final Color backgroundColor;
   final Color buttonColor;
-
-  /// Called when the user selects an item.
-  final ValueChanged<T> onChanged;
 
   /// The z-coordinate at which to place the menu when open.
   ///
@@ -536,7 +532,6 @@ class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with Widget
         _dropdownRoute = null;
       });
       if (!mounted || newValue == null) return;
-      if (widget.onChanged != null) widget.onChanged(newValue.result);
     });
   }
 

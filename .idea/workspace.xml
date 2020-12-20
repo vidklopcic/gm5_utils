@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/accordion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/accordion.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/better_dropdown.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/better_dropdown.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608463807806</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add toggle mode to accordion">
+      <created>1608464907108</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608464907108</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,20 +211,21 @@
     <MESSAGE value="add option to prvent expansion tile from expanding" />
     <MESSAGE value="added uppercase_input_formatter.dart" />
     <MESSAGE value="add selected property to accordion header builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add selected property to accordion header builder" />
+    <MESSAGE value="add toggle mode to accordion" />
+    <option name="LAST_COMMIT_MESSAGE" value="add toggle mode to accordion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600867354415">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600867354415" />
-    <state x="643" y="243" key="CommitChangelistDialog2" timestamp="1608463807658">
+    <state x="643" y="243" key="CommitChangelistDialog2" timestamp="1608464907018">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338565567" />
     <state x="463" y="-1167" key="CommitChangelistDialog2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141297873" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-253.2560.1440@0.0.2048.1280" timestamp="1605980377853" />
-    <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608463807658" />
+    <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608464907018" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786873985" />
     <state x="804" y="273" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1606328143863" />
     <state x="643" y="261" key="CommitChangelistDialog2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180577605" />
@@ -238,12 +246,12 @@
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state width="2006" height="446" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446527" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1608463809319">
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2" timestamp="1608464908901">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338566708" />
     <state x="439" y="-1012" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141298473" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608463809319" />
+    <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608464908901" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786875910" />
     <state x="780" y="428" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606328144887" />
     <state x="624" y="397" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180578588" />
@@ -262,12 +270,12 @@
     </state>
     <state x="676" y="397" width="695" height="486" key="find.popup/-1366.97.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1604590442287" />
     <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1605790106440" />
-    <state x="689" y="291" width="671" height="677" key="search.everywhere.popup" timestamp="1608463710064">
+    <state x="689" y="291" width="671" height="677" key="search.everywhere.popup" timestamp="1608466078498">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/-1366.97.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1604590283874" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/0.0.2048.1280/2048.-253.2560.1440@0.0.2048.1280" timestamp="1605980153247" />
-    <state x="689" y="291" width="671" height="677" key="search.everywhere.popup/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608463710064" />
+    <state x="689" y="291" width="671" height="677" key="search.everywhere.popup/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466078498" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1605789243836" />
     <state x="861" y="327" width="838" height="761" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606328113675" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600880174978" />
