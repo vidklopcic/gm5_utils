@@ -36,6 +36,16 @@ extension NullListExtension<T> on List<T> {
   void ensureIndex(int l, [T element]) {
     while (length <= l) add(element);
   }
+
+  void move(int from, int to) {
+    if (to == from)return;
+    if (from > to) {
+      insert(to, this[from]);
+      this.remove(from);
+    } else {
+      insert(to, this.removeAt(from));
+    }
+  }
 }
 
 extension CollectionUtil<T> on Iterable<T> {
