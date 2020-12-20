@@ -64,7 +64,7 @@ class _GM5AccordionState extends State<GM5Accordion> {
             type: widget.headerColor == null ? MaterialType.transparency : MaterialType.canvas,
             color: widget.headerColor,
             child: item.headerBuilder != null
-                ? item.headerBuilder(context, () => selectItem(index))
+                ? item.headerBuilder(context, () => selectItem(index), expanded)
                 : InkWell(
               onTap: () => selectItem(index),
               child: item.header,
@@ -107,7 +107,7 @@ class _GM5AccordionState extends State<GM5Accordion> {
   }
 }
 
-typedef GM5AccordionHeaderBuilder = Widget Function(BuildContext context, VoidCallback onSelect);
+typedef GM5AccordionHeaderBuilder = Widget Function(BuildContext context, VoidCallback onSelect, bool selected);
 
 class GM5AccordionItem {
   final double headerHeight;
