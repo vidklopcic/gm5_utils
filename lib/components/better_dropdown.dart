@@ -590,7 +590,7 @@ class BetterDropdownMenuItem<T> extends StatelessWidget {
   final Widget child;
   final T value;
 
-  const BetterDropdownMenuItem({Key key, @required this.child, @required this.value}) : super(key: key);
+  const BetterDropdownMenuItem({Key key, @required this.child, this.value}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
