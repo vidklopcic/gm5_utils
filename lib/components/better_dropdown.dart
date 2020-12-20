@@ -395,6 +395,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
     this.buttonColor,
     this.iconSize = 24.0,
     this.isDense = false,
+    this.childAlignment = Alignment.center,
     this.child,
     this.openChild,
   })  : assert(items != null),
@@ -447,6 +448,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
   /// can be useful when the button is embedded in a container that adds
   /// its own decorations, like [InputDecorator].
   final bool isDense;
+  final Alignment childAlignment;
 
   @override
   _DropdownButtonState<T> createState() => new _DropdownButtonState<T>();
@@ -455,6 +457,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
 class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with WidgetsBindingObserver {
   int _selectedIndex;
   _DropdownRoute<T> _dropdownRoute;
+
 
   @override
   void initState() {
@@ -567,8 +570,8 @@ class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with Widget
 
     Widget result = new DefaultTextStyle(
       style: _textStyle,
-      child: new Container(
-        alignment: Alignment.center,
+      child: Container(
+        alignment: widget.childAlignment,
         child: _dropdownRoute == null ? widget.child : widget.openChild ?? widget.child,
       ),
     );
