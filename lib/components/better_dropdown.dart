@@ -280,6 +280,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
     this.offset,
     this.theme,
     this.backgroundColor,
+    this.dialogBarrierColor,
     @required this.style,
     this.barrierLabel,
   }) : assert(style != null);
@@ -294,6 +295,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
   final double width;
   final Offset offset;
   final Color backgroundColor;
+  final Color dialogBarrierColor;
 
   ScrollController scrollController;
 
@@ -304,7 +306,7 @@ class _DropdownRoute<T> extends PopupRoute<_DropdownRouteResult<T>> {
   bool get barrierDismissible => true;
 
   @override
-  Color get barrierColor => null;
+  Color get barrierColor => dialogBarrierColor;
 
   @override
   final String barrierLabel;
@@ -392,6 +394,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
     this.width = 300,
     this.offset = const Offset(0, 0),
     this.backgroundColor,
+    this.barrierColor,
     this.buttonColor,
     this.iconSize = 24.0,
     this.isDense = false,
@@ -420,6 +423,7 @@ class BetterDropdownButton<T> extends StatefulWidget {
 
   final Offset offset;
   final Color backgroundColor;
+  final Color barrierColor;
   final Color buttonColor;
 
   /// The z-coordinate at which to place the menu when open.
@@ -527,6 +531,7 @@ class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with Widget
         theme: Theme.of(context),
         style: _textStyle,
         barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
+        dialogBarrierColor: widget.barrierColor
       );
     });
 
