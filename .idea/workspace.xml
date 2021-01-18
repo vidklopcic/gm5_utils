@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/input_formatters/validators.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/input_formatters/validators.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +31,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/input_formatters" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/components" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
-      <recent name="$PROJECT_DIR$/lib/mixins" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/components" />
       <recent name="$PROJECT_DIR$/lib/input_formatters" />
       <recent name="$PROJECT_DIR$/lib/extended_functionality" />
       <recent name="$PROJECT_DIR$/lib/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
+      <recent name="$PROJECT_DIR$/lib/mixins" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -235,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608498339225</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add width and height to context">
+      <created>1608629641783</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608629641783</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -265,18 +276,13 @@
     <MESSAGE value="add barrier dismissible to dropdown" />
     <MESSAGE value="add method to move element in list" />
     <MESSAGE value="typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="typo" />
+    <MESSAGE value="add width and height to context" />
+    <option name="LAST_COMMIT_MESSAGE" value="add width and height to context" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600867354415">
-      <screen x="0" y="0" width="2048" height="1280" />
-    </state>
-    <state x="712" y="383" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600867354415" />
     <state x="563" y="232" key="CommitChangelistDialog2" timestamp="1608498339068">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="643" y="243" key="CommitChangelistDialog2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338565567" />
-    <state x="463" y="-1167" key="CommitChangelistDialog2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141297873" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-253.2560.1440@0.0.2048.1280" timestamp="1605980377853" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466342455" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786873985" />
@@ -284,59 +290,45 @@
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1608498339068" />
     <state x="643" y="262" key="CommitChangelistDialog2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467387842" />
     <state x="643" y="261" key="CommitChangelistDialog2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180577605" />
-    <state x="643" y="243" key="CommitChangelistDialog2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871965415" />
-    <state width="2006" height="446" key="GridCell.Tab.0.bottom" timestamp="1602141446528">
-      <screen x="0" y="0" width="2048" height="1280" />
+    <state x="2355" y="230" key="DiffContextDialog" timestamp="1610566399092">
+      <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
-    <state width="2006" height="446" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446528" />
-    <state width="2006" height="446" key="GridCell.Tab.0.center" timestamp="1602141446527">
-      <screen x="0" y="0" width="2048" height="1280" />
+    <state x="2355" y="230" key="DiffContextDialog/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566399092" />
+    <state x="2870" y="397" key="RollbackChangesDialog" timestamp="1610566401733">
+      <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
-    <state width="2006" height="446" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446527" />
-    <state width="2006" height="446" key="GridCell.Tab.0.left" timestamp="1602141446526">
-      <screen x="0" y="0" width="2048" height="1280" />
-    </state>
-    <state width="2006" height="446" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446526" />
-    <state width="2006" height="446" key="GridCell.Tab.0.right" timestamp="1602141446527">
-      <screen x="0" y="0" width="2048" height="1280" />
-    </state>
-    <state width="2006" height="446" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1602141446527" />
+    <state x="2870" y="397" key="RollbackChangesDialog/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566401733" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2" timestamp="1608498340301">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2/-1366.-114.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600338566708" />
-    <state x="439" y="-1012" key="Vcs.Push.Dialog.v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141298473" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466344311" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786875910" />
     <state x="780" y="428" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606328144887" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1608498340301" />
     <state x="624" y="396" key="Vcs.Push.Dialog.v2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467389326" />
     <state x="624" y="397" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1603180578588" />
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600871966080" />
-    <state x="100" y="100" width="1848" height="1080" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600782547871">
-      <screen x="0" y="0" width="2048" height="1229" />
-    </state>
-    <state x="100" y="100" width="1848" height="1080" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2048.279.1366.1001/0.0.2048.1229@0.0.2048.1229" timestamp="1600782547871" />
     <state x="848" y="572" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604590203329">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="848" y="572" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.97.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1604590203329" />
-    <state x="719" y="-796" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1280/-341.-1440.2560.1440@-341.-1440.2560.1440" timestamp="1601141284974" />
-    <state x="676" y="397" width="695" height="486" key="find.popup" timestamp="1605790106440">
-      <screen x="0" y="0" width="2048" height="1280" />
+    <state x="592" y="363" width="695" height="486" key="find.popup" timestamp="1610983846782">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="676" y="397" width="695" height="486" key="find.popup/-1366.97.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1604590442287" />
     <state x="676" y="397" width="695" height="486" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1605790106440" />
-    <state x="689" y="308" width="766" height="666" key="search.everywhere.popup" timestamp="1608629596377">
-      <screen x="0" y="23" width="2048" height="1257" />
+    <state x="592" y="363" width="695" height="486" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1610983846782" />
+    <state x="2893" y="410" width="869" height="539" key="find.popup/0.23.2048.1257/2048.-29.2560.1417@2048.-29.2560.1417" timestamp="1609273867572" />
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup" timestamp="1610566230032">
+      <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/-1366.97.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1604590283874" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/0.0.2048.1280/2048.-253.2560.1440@0.0.2048.1280" timestamp="1605980153247" />
     <state x="689" y="291" width="671" height="677" key="search.everywhere.popup/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466078498" />
     <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1605789243836" />
     <state x="861" y="327" width="838" height="761" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606328113675" />
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566230032" />
     <state x="603" y="272" width="670" height="581" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1608497835666" />
     <state x="689" y="308" width="766" height="666" key="search.everywhere.popup/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608629596377" />
-    <state x="689" y="291" width="670" height="676" key="search.everywhere.popup/2048.256.1366.1024/0.0.2048.1280@0.0.2048.1280" timestamp="1600880174978" />
+    <state x="2909" y="292" width="958" height="751" key="search.everywhere.popup/0.23.2048.1257/2048.-29.2560.1417@2048.-29.2560.1417" timestamp="1609273427820" />
   </component>
 </project>
