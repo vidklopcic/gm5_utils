@@ -52,4 +52,16 @@ extension CollectionUtil<T> on Iterable<T> {
       index++;
     }
   }
+
+  Iterable<E> mapSeparated<E, T>(E Function(int index, T item) transform, E Function(int index) separator) sync* {
+    int index = 0;
+
+    for (final item in this) {
+      yield transform(index, item as T);
+      if (index + 1 < length) {
+        yield separator(index);
+      }
+      index++;
+    }
+  }
 }
