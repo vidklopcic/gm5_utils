@@ -35,6 +35,10 @@ class DateUtils {
     }
     return DateTime(year, targetM, date.day);
   }
+
+  DateTime toMondayDate(DateTime dateTime) {
+    return dateTime.subtract(Duration(days: DateTime.now().weekday - 1));
+  }
 }
 
 const DF_UPPER = 'up:';
