@@ -12,6 +12,7 @@ class HoverableDefaultTextStyle extends StatefulWidget {
   final TextWidthBasis textWidthBasis;
   final ui.TextHeightBehavior textHeightBehavior;
   final Duration duration;
+  final Curve curve;
 
   const HoverableDefaultTextStyle({
     Key key,
@@ -19,11 +20,12 @@ class HoverableDefaultTextStyle extends StatefulWidget {
     this.hoverStyle,
     this.child,
     this.textAlign,
-    this.softWrap,
-    this.overflow,
+    this.softWrap = true,
+    this.overflow = TextOverflow.clip,
     this.maxLines,
-    this.textWidthBasis,
+    this.textWidthBasis = TextWidthBasis.parent,
     this.textHeightBehavior,
+    this.curve = Curves.linear,
     this.duration,
   }) : super(key: key);
 
@@ -49,6 +51,7 @@ class _HoverableDefaultTextStyleState extends State<HoverableDefaultTextStyle> {
         textWidthBasis: widget.textWidthBasis,
         textHeightBehavior: widget.textHeightBehavior,
         duration: widget.duration,
+        curve: widget.curve,
       ),
     );
   }
