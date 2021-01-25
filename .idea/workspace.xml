@@ -32,15 +32,16 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
+      <recent name="$PROJECT_DIR$/lib/mixins" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/types" />
       <recent name="$PROJECT_DIR$/lib/components" />
       <recent name="$PROJECT_DIR$/lib/input_formatters" />
       <recent name="$PROJECT_DIR$/lib/extended_functionality" />
       <recent name="$PROJECT_DIR$/lib/utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
-      <recent name="$PROJECT_DIR$/lib/mixins" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -264,13 +265,19 @@
       <option name="project" value="LOCAL" />
       <updated>1611338151114</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add cached value pattern">
+      <created>1611572844071</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611572844071</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add better dropdown" />
     <MESSAGE value="custom dropdown is working" />
     <MESSAGE value="added accordion and delayed builder" />
     <MESSAGE value="http client, accordion, delayed builder" />
@@ -295,17 +302,18 @@
     <MESSAGE value="add default settings for delayed buidler" />
     <MESSAGE value="add mapSeparated" />
     <MESSAGE value="add toMondayDate" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toMondayDate" />
+    <MESSAGE value="add cached value pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cached value pattern" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2596" y="241" key="CommitChangelistDialog2" timestamp="1611338151023">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="563" y="232" key="CommitChangelistDialog2" timestamp="1611572843981">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-253.2560.1440@0.0.2048.1280" timestamp="1605980377853" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466342455" />
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786873985" />
     <state x="804" y="273" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1606328143863" />
-    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1610990131329" />
+    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1611572843981" />
     <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1611338151023" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1608498339068" />
     <state x="643" y="262" key="CommitChangelistDialog2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467387842" />
@@ -318,13 +326,13 @@
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="2870" y="397" key="RollbackChangesDialog/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566401733" />
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2" timestamp="1611338152277">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="546" y="349" key="Vcs.Push.Dialog.v2" timestamp="1611572845279">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466344311" />
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1605786875910" />
     <state x="780" y="428" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606328144887" />
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1610990132591" />
+    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1611572845279" />
     <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1611338152277" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1608498340301" />
     <state x="624" y="396" key="Vcs.Push.Dialog.v2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467389326" />
