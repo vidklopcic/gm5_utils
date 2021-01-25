@@ -50,7 +50,7 @@ class _HoverableDefaultTextStyleState extends State<HoverableDefaultTextStyle> {
         maxLines: widget.maxLines,
         textWidthBasis: widget.textWidthBasis,
         textHeightBehavior: widget.textHeightBehavior,
-        duration: widget.duration ?? Duration(milliseconds: 300),
+        duration: widget.duration ?? Duration(milliseconds: 100),
         curve: widget.curve,
       ),
     );
