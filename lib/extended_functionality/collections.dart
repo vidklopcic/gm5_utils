@@ -41,6 +41,14 @@ extension NullListExtension<T> on List<T> {
     if (to == from) return;
     insert(to, this.removeAt(from));
   }
+
+  void toggle(T element) {
+    if (contains(element)) {
+      remove(element);
+    } else {
+      add(element);
+    }
+  }
 }
 
 extension CollectionUtil<T> on Iterable<T> {
