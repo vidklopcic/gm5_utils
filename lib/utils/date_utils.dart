@@ -37,7 +37,7 @@ class DateUtils {
   }
 
   DateTime toMondayDate(DateTime dateTime) {
-    return dateTime.subtract(Duration(days: dateTime.weekday - 1));
+    return dateTime.subtract(Duration(days: dateTime.weekday));
   }
 }
 
