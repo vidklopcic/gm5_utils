@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-typedef LoadingOverlayBuilder<T> = Widget Function(BuildContext context, T Function(Future<T> action));
+typedef LoadingOverlayBuilder<T> = Widget Function(BuildContext context, Future<T> Function(Future<T> action));
 
-class LoadingOverlay extends StatefulWidget {
+class LoadingOverlay<T> extends StatefulWidget {
   static Duration defaultDuration = Duration(milliseconds: 300);
   static Widget defaultPlaceholder;
-  final LoadingOverlayBuilder builder;
+  final LoadingOverlayBuilder<T> builder;
   final Duration fadeDuration;
   final Widget placeholder;
   final Function(Exception) onError;
@@ -14,10 +14,10 @@ class LoadingOverlay extends StatefulWidget {
       : super(key: key);
 
   @override
-  _LoadingOverlayState createState() => _LoadingOverlayState();
+  _LoadingOverlayState createState() => _LoadingOverlayState<T>();
 }
 
-class _LoadingOverlayState extends State<LoadingOverlay> {
+class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
   bool showLoading = false;
 
   @override
@@ -45,7 +45,7 @@ class _LoadingOverlayState extends State<LoadingOverlay> {
     super.initState();
   }
 
-  Future _doAction(Future action) async {
+  Future<T> _doAction(Future<T> action) async {
     setState(() {
       showLoading = true;
     });
