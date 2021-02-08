@@ -20,21 +20,35 @@ class DecimalTextInputFormatter extends TextInputFormatter {
   ) {
     TextSelection newSelection = newValue.selection;
     String truncated = newValue.text.replaceAll('.', separator);
+    while (truncated.endsWith('0')) {
+      truncated = truncated.substring(0, truncated.length - 1);
+    }
+    truncated = truncated.replaceAll('$separator$separator', separator);
+    final parts = truncated.split(separator);
+    if (parts.length > 2) {
+      parts[1] = parts[1].substring(0, decimalRange);
+      truncated = parts.sublist(0, 2).join(separator);
+    }
 
     if (decimalRange != null) {
-      String value = newValue.text;
-
+      String value = truncated;
       if (decimalRange > 0) {
-        if (value.contains(separator) && value.substring(value.indexOf(separator) + 1).length > decimalRange) {
-          truncated = oldValue.text;
-          newSelection = oldValue.selection;
-        } else if (value == separator) {
+        int nDecimals = value.substring(value.indexOf(separator) + 1).length;
+        if (value.contains(separator) && nDecimals > decimalRange) {
+          truncated = value.substring(0, value.length - (nDecimals - decimalRange));
+          newSelection = newValue.selection.copyWith(
+            baseOffset: truncated.length,
+            extentOffset: truncated.length,
+          );
+        } else if (value == separator && oldValue.text.length < value.length) {
           truncated = "0$separator";
 
           newSelection = newValue.selection.copyWith(
             baseOffset: math.min(truncated.length, truncated.length + 1),
             extentOffset: math.min(truncated.length, truncated.length + 1),
           );
+        } else if (truncated.isNotEmpty && !value.contains(separator) && oldValue.text.contains(separator)) {
+          truncated = oldValue.text;
         }
       } else {
         if (truncated.contains(separator)) {
