@@ -20,7 +20,7 @@ class DecimalTextInputFormatter extends TextInputFormatter {
   ) {
     TextSelection newSelection = newValue.selection;
     String truncated = newValue.text.replaceAll('.', separator);
-    while (truncated.endsWith('0')) {
+    while (truncated.contains(separator) && decimalRange > 0 && truncated.endsWith('0')) {
       truncated = truncated.substring(0, truncated.length - 1);
     }
     truncated = truncated.replaceAll('$separator$separator', separator);
