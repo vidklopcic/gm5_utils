@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DelayedBuilder extends StatefulWidget {
+  static Duration defaultDelay = Duration(milliseconds: 200);
   static Duration defaultDuration = Duration(milliseconds: 300);
   static Widget defaultPlaceholder;
 
@@ -39,6 +40,6 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(widget.delay ?? Duration(milliseconds: 200)).then((value) => setState(() => showContent = true));
+    Future.delayed(widget.delay ?? DelayedBuilder.defaultDelay).then((value) => setState(() => showContent = true));
   }
 }
