@@ -45,7 +45,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
     super.initState();
   }
 
-  Future<T> _doAction(Future<T> action) async {
+  Future<T> _doAction(Future action) async {
     setState(() {
       showLoading = true;
     });
@@ -69,6 +69,6 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
       showLoading = false;
     });
 
-    return result;
+    return result as T;
   }
 }
