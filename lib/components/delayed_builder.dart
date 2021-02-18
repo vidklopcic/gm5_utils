@@ -40,6 +40,8 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(widget.delay ?? DelayedBuilder.defaultDelay).then((value) => setState(() => showContent = true));
+    Future.delayed(widget.delay ?? DelayedBuilder.defaultDelay).then((value) {
+      if (mounted) setState(() => showContent = true);
+    });
   }
 }
