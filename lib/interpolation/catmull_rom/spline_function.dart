@@ -3,14 +3,13 @@ import 'point2d.dart';
 import 'dart:collection';
 
 class SplineFunction {
-  final int nSteps;
   CatmullRomSpline mSpline;
   double mLastY;
   List<Point2D> mControlPoints = [];
   List<Point2D> mInterpolatedPoints;
-  int mPerSegment;
+  final int mPerSegment;
 
-  SplineFunction(HashMap<double, double> points, this.nSteps, {bool linear: false}) {
+  SplineFunction(HashMap<double, double> points, this.mPerSegment, {bool linear: false}) {
     if (points.length < 2) {
       mControlPoints.clear();
       mControlPoints.add(Point2D(-1, -1));
@@ -22,7 +21,6 @@ class SplineFunction {
       return;
     }
     mLastY = mControlPoints[mControlPoints.length - 1].y;
-    mPerSegment = (nSteps ~/ points.length);
     mSpline = CatmullRomSpline.create(mControlPoints, mPerSegment, 0.5, closed: false);
     makeFunction();
   }
