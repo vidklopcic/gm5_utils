@@ -9,7 +9,7 @@ class SplineFunction {
   List<Point2D> mInterpolatedPoints;
   final int mPerSegment;
 
-  SplineFunction(HashMap<double, double> points, this.mPerSegment, {bool linear: false}) {
+  SplineFunction(HashMap<double, double> points, this.mPerSegment, {bool linear: false, double alpha=0.5}) {
     if (points.length < 2) {
       mControlPoints.clear();
       mControlPoints.add(Point2D(-1, -1));
@@ -21,7 +21,7 @@ class SplineFunction {
       return;
     }
     mLastY = mControlPoints[mControlPoints.length - 1].y;
-    mSpline = CatmullRomSpline.create(mControlPoints, mPerSegment, 0.5, closed: false);
+    mSpline = CatmullRomSpline.create(mControlPoints, mPerSegment, alpha, closed: false);
     makeFunction();
   }
 

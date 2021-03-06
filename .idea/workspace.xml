@@ -55,20 +55,6 @@
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
     </task>
-    <task id="LOCAL-00002" summary="commit missing files">
-      <created>1599462740513</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1599462740513</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add throttle method">
-      <created>1600338565667</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1600338565667</updated>
-    </task>
     <task id="LOCAL-00004" summary="add better dropdown">
       <created>1600778339536</created>
       <option name="number" value="00004" />
@@ -398,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615043353098</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added catmull_rom interpolation, suffix formatter">
+      <created>1615050202869</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1615050202869</updated>
+    </task>
+    <task id="LOCAL-00052" summary="added catmull_rom interpolation, suffix formatter">
+      <created>1615050327377</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1615050327377</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -432,13 +432,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="added catmull_rom interpolation, suffix formatter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="563" y="232" key="CommitChangelistDialog2" timestamp="1615050202743">
+    <state x="563" y="232" key="CommitChangelistDialog2" timestamp="1615050327271">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466342455" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1611599799175" />
     <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1613637793454" />
-    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1615050202743" />
+    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1615050327271" />
     <state x="643" y="262" key="CommitChangelistDialog2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467387842" />
     <state x="2355" y="230" key="DiffContextDialog" timestamp="1610566399092">
       <screen x="1792" y="-29" width="2560" height="1417" />
@@ -448,13 +448,13 @@
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="2870" y="397" key="RollbackChangesDialog/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566401733" />
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2" timestamp="1615050204330">
+    <state x="546" y="349" key="Vcs.Push.Dialog.v2" timestamp="1615050330449">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466344311" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1611599800537" />
     <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1613637795164" />
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1615050204330" />
+    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1615050330449" />
     <state x="624" y="396" key="Vcs.Push.Dialog.v2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467389326" />
     <state x="2638" y="410" width="993" height="628" key="find.popup" timestamp="1614526575771">
       <screen x="1792" y="-29" width="2560" height="1417" />
