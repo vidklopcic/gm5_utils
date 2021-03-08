@@ -61,8 +61,8 @@ class SplineFunction {
 
   void makeFunction() {
     List<Point2D> interpolatedPoints = mSpline.getInterpolatedPoints();
-    interpolatedPoints = removeNonMonotonic(interpolatedPoints);
-    fitBounds(interpolatedPoints);
+    // interpolatedPoints = removeNonMonotonic(interpolatedPoints);
+    // fitBounds(interpolatedPoints);
     mInterpolatedPoints = interpolatedPoints;
   }
 

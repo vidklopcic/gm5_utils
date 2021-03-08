@@ -62,6 +62,7 @@ class CatmullRomSpline {
           (("Expected " + numPoints.toString()) + " points, but got ") +
               points.length.toString());
     }
+
     for (int j = 0; j < points.length; j++) {
       Point2D p = points[j];
       controlPoints[j + 1].setLocation(p.x, p.y);
