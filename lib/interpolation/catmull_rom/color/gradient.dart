@@ -4,7 +4,7 @@ class LinearColorGradient {
   final List<Color> colors;
   final List<double> stops;
 
-  LinearColorGradient([this.colors, List<double> stops])
+  LinearColorGradient({this.colors, List<double> stops})
       : this.stops = stops ?? List.generate(colors.length, (index) => index / colors.length);
 
   Color lerp(double t) {
