@@ -31,14 +31,12 @@ class DecimalTextInputFormatter extends TextInputFormatter {
 
     final parts = truncated.split(separator);
     if (parts.length > 2) {
-      parts[1] = parts[1].substring(0, decimalRange);
       truncated = parts.sublist(0, 2).join(separator);
     }
 
-    if (decimalRange != null) {
+    if (decimalRange != null && decimalRange > 0) {
       double value;
       if (!truncated.contains(separator)) {
-        print('herer ${newValue.text}');
         if (newValue.text.length == 0) {
           value = 0;
         } else if (newValue.text.length == 1) {
