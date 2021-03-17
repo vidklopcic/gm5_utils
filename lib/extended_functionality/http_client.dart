@@ -46,7 +46,7 @@ class HttpClientWithHeaders extends http.BaseClient {
   }
 
   @override
-  Future<Response> delete(url, {Map<String, String> headers}) {
+  Future<Response> delete(Uri url, {Map<String, String> headers, Object body, Encoding encoding}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.delete(url, headers: headers);
   }
