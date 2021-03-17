@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/services.dart';
 import 'dart:math' as math;
 
@@ -25,10 +27,8 @@ class DecimalTextInputFormatter extends TextInputFormatter {
 
     TextSelection newSelection = newValue.selection;
     String truncated = newValue.text.replaceAll('.', separator);
-    while (truncated.contains(separator) && decimalRange > 0 && truncated.endsWith('0')) {
-      truncated = truncated.substring(0, truncated.length - 1);
-    }
     truncated = truncated.replaceAll('$separator$separator', separator);
+
     final parts = truncated.split(separator);
     if (parts.length > 2) {
       parts[1] = parts[1].substring(0, decimalRange);
@@ -36,39 +36,29 @@ class DecimalTextInputFormatter extends TextInputFormatter {
     }
 
     if (decimalRange != null) {
-      String value = truncated;
-      if (decimalRange > 0) {
-        int nDecimals = value.substring(value.indexOf(separator) + 1).length;
-        if (value.contains(separator) && nDecimals > decimalRange) {
-          truncated = value.substring(0, value.length - (nDecimals - decimalRange));
-        } else if (value == separator && oldValue.text.length < value.length) {
-          truncated = "0$separator";
-
-          newSelection = newValue.selection.copyWith(
-            baseOffset: math.min(truncated.length, truncated.length + 1),
-            extentOffset: math.min(truncated.length, truncated.length + 1),
+      double value;
+      if (!truncated.contains(separator)) {
+        print('herer ${newValue.text}');
+        if (newValue.text.length == 0) {
+          value = 0;
+        } else if (newValue.text.length == 1) {
+          value = double.tryParse(newValue.text);
+        } else if (newValue.selection.extentOffset == oldValue.selection.extentOffset) {
+          return newValue.copyWith(
+            text: oldValue.text + suffix,
+            selection: newValue.selection.copyWith(
+                baseOffset: newValue.selection.baseOffset + 1, extentOffset: newValue.selection.extentOffset + 1),
           );
-        } else if (truncated.isNotEmpty && !value.contains(separator) && oldValue.text.contains(separator)) {
-          if (newValue.selection.extentOffset == newValue.selection.baseOffset) {
-            truncated = oldValue.text;
-          } else {
-            truncated = '$truncated$separator';
-          }
+        } else {
+          return newValue.copyWith(text: oldValue.text + suffix);
         }
       } else {
-        if (truncated.contains(separator)) {
-          truncated = oldValue.text;
-          newSelection = oldValue.selection;
-        }
+        value = double.tryParse(truncated.replaceAll(separator, '.'));
       }
-
-      double num = double.tryParse(truncated.replaceAll(separator, '.'));
-      if (num != null) {
-        double clamped = num.clamp(min ?? double.negativeInfinity, max ?? double.infinity);
-        if (clamped != num) {
-          truncated = num.toStringAsFixed(decimalRange).replaceAll('.', separator);
-        }
+      if (value == null) {
+        return oldValue.copyWith(text: oldValue.text + suffix);
       }
+      truncated = value.toStringAsFixed(decimalRange).replaceAll('.', separator);
 
       if (newValue.selection.baseOffset > truncated.length) {
         newSelection = newValue.selection.copyWith(baseOffset: truncated.length);
