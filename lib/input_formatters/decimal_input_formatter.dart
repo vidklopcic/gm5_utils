@@ -1,7 +1,4 @@
-import 'dart:html';
-
 import 'package:flutter/services.dart';
-import 'dart:math' as math;
 
 class DecimalTextInputFormatter extends TextInputFormatter {
   final String separator;

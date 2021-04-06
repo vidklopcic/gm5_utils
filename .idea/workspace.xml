@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extended_functionality/http_client.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extended_functionality/http_client.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +33,16 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/interpolation" />
-      <recent name="$PROJECT_DIR$/lib/input_formatters" />
-      <recent name="$PROJECT_DIR$/lib/components" />
-      <recent name="$PROJECT_DIR$/lib/types" />
-      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/extended_functionality" />
       <recent name="$PROJECT_DIR$/lib/mixins" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/components" />
+      <recent name="$PROJECT_DIR$/lib/interpolation" />
+      <recent name="$PROJECT_DIR$/lib/input_formatters" />
+      <recent name="$PROJECT_DIR$/lib/types" />
+      <recent name="$PROJECT_DIR$/lib/extended_functionality" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -56,13 +55,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00010" summary="remove shadowThemeOnly">
-      <created>1604481510050</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1604481510050</updated>
     </task>
     <task id="LOCAL-00011" summary="added value parser to decimal_input_formatter.dart">
       <created>1605446618881</created>
@@ -400,13 +392,19 @@
       <option name="project" value="LOCAL" />
       <updated>1616012575410</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="added hovering builder">
+      <created>1616744146401</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1616744146402</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add width and height to context" />
     <MESSAGE value="add default settings for delayed buidler" />
     <MESSAGE value="add mapSeparated" />
     <MESSAGE value="add toMondayDate" />
@@ -431,17 +429,16 @@
     <MESSAGE value="price formatting fixes" />
     <MESSAGE value="fix decimals" />
     <MESSAGE value="update httpclient" />
-    <option name="LAST_COMMIT_MESSAGE" value="update httpclient" />
+    <MESSAGE value="added hovering builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hovering builder" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="563" y="232" key="CommitChangelistDialog2" timestamp="1616012575295">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="2596" y="241" key="CommitChangelistDialog2" timestamp="1616744146221">
+      <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
-    <state x="643" y="243" key="CommitChangelistDialog2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466342455" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530492697" />
-    <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1615990872921" />
+    <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616744146221" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012575295" />
-    <state x="643" y="262" key="CommitChangelistDialog2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467387842" />
     <state x="2355" y="230" key="DiffContextDialog" timestamp="1610566399092">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
@@ -466,28 +463,24 @@
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="2870" y="397" key="RollbackChangesDialog/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1610566401733" />
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2" timestamp="1616012578393">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="2572" y="392" key="Vcs.Push.Dialog.v2" timestamp="1616744147814">
+      <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
-    <state x="624" y="380" key="Vcs.Push.Dialog.v2/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466344311" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530494532" />
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1615990874404" />
+    <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616744147814" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012578393" />
-    <state x="624" y="396" key="Vcs.Push.Dialog.v2/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608467389326" />
     <state x="2638" y="410" width="993" height="628" key="find.popup" timestamp="1616743984071">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="592" y="363" width="695" height="486" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1613637719528" />
     <state x="2638" y="410" width="993" height="628" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616743984071" />
     <state x="2893" y="410" width="869" height="539" key="find.popup/0.23.2048.1257/2048.-29.2560.1417@2048.-29.2560.1417" timestamp="1609273867572" />
-    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup" timestamp="1616743986648">
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup" timestamp="1617733716648">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
-    <state x="689" y="291" width="671" height="677" key="search.everywhere.popup/0.0.2048.1280/2048.-52.2560.1440@0.0.2048.1280" timestamp="1608466078498" />
     <state x="603" y="272" width="671" height="582" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1616051525676" />
-    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616743986648" />
-    <state x="603" y="272" width="670" height="581" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1615048572714" />
-    <state x="689" y="308" width="766" height="666" key="search.everywhere.popup/0.23.2048.1257/2048.-29.2560.1417@0.23.2048.1257" timestamp="1608629596377" />
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1617733716648" />
+    <state x="603" y="272" width="670" height="581" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1617097678367" />
     <state x="2909" y="292" width="958" height="751" key="search.everywhere.popup/0.23.2048.1257/2048.-29.2560.1417@2048.-29.2560.1417" timestamp="1609273427820" />
   </component>
 </project>
