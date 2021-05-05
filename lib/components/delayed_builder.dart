@@ -43,5 +43,6 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
     Future.delayed(widget.delay ?? DelayedBuilder.defaultDelay).then((value) {
       if (mounted) setState(() => showContent = true);
     });
+    showContent = !widget.stillLoading;
   }
 }

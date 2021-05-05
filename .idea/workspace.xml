@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/keyboard_visibility_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/keyboard_visibility_builder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/delayed_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/delayed_builder.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +56,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update items on parent update">
-      <created>1605784992870</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1605784992870</updated>
     </task>
     <task id="LOCAL-00014" summary="fix">
       <created>1605786543943</created>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619932988166</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add keyboard_visibility_builder.dart">
+      <created>1619933068900</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1619933068900</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -434,11 +434,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="add keyboard_visibility_builder.dart" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2596" y="241" key="CommitChangelistDialog2" timestamp="1619932987996">
+    <state x="2596" y="241" key="CommitChangelistDialog2" timestamp="1619933068779">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530492697" />
-    <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1619932987996" />
+    <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1619933068779" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012575295" />
     <state width="2518" height="491" key="GridCell.Tab.0.bottom" timestamp="1616000692637">
       <screen x="1792" y="-29" width="2560" height="1417" />
@@ -456,22 +456,22 @@
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state width="2518" height="491" key="GridCell.Tab.0.right/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2" timestamp="1619932989684">
+    <state x="2572" y="392" key="Vcs.Push.Dialog.v2" timestamp="1619933070081">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530494532" />
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1619932989684" />
+    <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1619933070081" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012578393" />
     <state x="2638" y="410" width="993" height="628" key="find.popup" timestamp="1616743984071">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="592" y="363" width="695" height="486" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1613637719528" />
     <state x="2638" y="410" width="993" height="628" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616743984071" />
-    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup" timestamp="1619081855623">
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup" timestamp="1620214414027">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state x="603" y="272" width="671" height="582" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1616051525676" />
-    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1619081855623" />
+    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620214414027" />
     <state x="603" y="272" width="670" height="581" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1617097678367" />
   </component>
 </project>
