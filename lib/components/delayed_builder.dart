@@ -10,9 +10,16 @@ class DelayedBuilder extends StatefulWidget {
   final Duration fadeDuration;
   final Widget placeholder;
   final bool stillLoading;
+  final bool alwaysTransition;
 
   const DelayedBuilder(
-      {Key key, this.builder, this.delay, this.placeholder, this.fadeDuration, this.stillLoading = false})
+      {Key key,
+      this.builder,
+      this.delay,
+      this.placeholder,
+      this.fadeDuration,
+      this.stillLoading = false,
+      this.alwaysTransition = false})
       : super(key: key);
 
   @override
@@ -43,6 +50,6 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
     Future.delayed(widget.delay ?? DelayedBuilder.defaultDelay).then((value) {
       if (mounted) setState(() => showContent = true);
     });
-    showContent = !widget.stillLoading;
+    showContent = !widget.alwaysTransition && !widget.stillLoading;
   }
 }
