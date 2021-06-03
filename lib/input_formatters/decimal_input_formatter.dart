@@ -18,6 +18,10 @@ class DecimalTextInputFormatter extends TextInputFormatter {
     TextEditingValue oldValue, // unused.
     TextEditingValue newValue,
   ) {
+    if (newValue.text == '-')
+      return newValue.copyWith(
+          text:
+              '-${_lastValue?.replaceAll('-', '') ?? (0.0).toStringAsFixed(decimalRange ?? 0).replaceAll('.', separator)}');
     String suffix = newValue.text.substring(newValue.text.length - ignoreRight);
     newValue = newValue.copyWith(text: newValue.text.substring(0, newValue.text.length - ignoreRight));
     oldValue = oldValue.copyWith(text: oldValue.text.substring(0, oldValue.text.length - ignoreRight));
