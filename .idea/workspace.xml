@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="add option to always transition">
+    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +55,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add option to prvent expansion tile from expanding">
-      <created>1605980378100</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1605980378100</updated>
     </task>
     <task id="LOCAL-00017" summary="added uppercase_input_formatter.dart">
       <created>1606328143948</created>
@@ -400,13 +392,19 @@
       <option name="project" value="LOCAL" />
       <updated>1620220316458</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="fixed negative values for decimal formatter">
+      <created>1622756402524</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1622756402524</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add NullableTextField" />
     <MESSAGE value="add hoverable_default_text_style.dart" />
     <MESSAGE value="add default duration" />
     <MESSAGE value="add toggle method" />
@@ -431,15 +429,17 @@
     <MESSAGE value="add keyboard_visibility_builder.dart" />
     <MESSAGE value="immediately show content if already loaded" />
     <MESSAGE value="add option to always transition" />
-    <option name="LAST_COMMIT_MESSAGE" value="add option to always transition" />
+    <MESSAGE value="fixed negative values for decimal formatter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed negative values for decimal formatter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2596" y="241" key="CommitChangelistDialog2" timestamp="1620461668413">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="563" y="234" key="CommitChangelistDialog2" timestamp="1622756402322">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530492697" />
     <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620461668413" />
     <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012575295" />
+    <state x="563" y="234" key="CommitChangelistDialog2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756402322" />
     <state width="2518" height="491" key="GridCell.Tab.0.bottom" timestamp="1616000692637">
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
@@ -456,16 +456,18 @@
       <screen x="1792" y="-29" width="2560" height="1417" />
     </state>
     <state width="2518" height="491" key="GridCell.Tab.0.right/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2" timestamp="1620220317756">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="546" y="350" key="Vcs.Push.Dialog.v2" timestamp="1622756403987">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530494532" />
     <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620220317756" />
     <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012578393" />
-    <state x="2638" y="410" width="993" height="628" key="find.popup" timestamp="1616743984071">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="546" y="350" key="Vcs.Push.Dialog.v2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756403987" />
+    <state x="592" y="364" width="696" height="486" key="find.popup" timestamp="1624096494241">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="2638" y="410" width="993" height="628" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616743984071" />
+    <state x="592" y="364" width="696" height="486" key="find.popup/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624096494241" />
     <state x="603" y="273" width="671" height="581" key="search.everywhere.popup" timestamp="1622731620532">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
