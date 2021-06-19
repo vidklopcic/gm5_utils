@@ -9,9 +9,16 @@ class LoadingOverlay<T> extends StatefulWidget {
   final Duration fadeDuration;
   final Widget placeholder;
   final Function(Exception) onError;
+  final bool ignorePointer;
 
-  const LoadingOverlay({Key key, this.builder, this.placeholder, this.fadeDuration = Duration.zero, this.onError})
-      : super(key: key);
+  const LoadingOverlay({
+    Key key,
+    this.builder,
+    this.placeholder,
+    this.fadeDuration = Duration.zero,
+    this.onError,
+    this.ignorePointer = true,
+  }) : super(key: key);
 
   @override
   _LoadingOverlayState createState() => _LoadingOverlayState<T>();
@@ -28,7 +35,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
         widget.builder(context, _doAction),
         Positioned.fill(
           child: IgnorePointer(
-            ignoring: !showLoading,
+            ignoring: widget.ignorePointer && !showLoading,
             child: AnimatedOpacity(
               duration: widget.fadeDuration ?? LoadingOverlay.defaultDuration ?? Duration(milliseconds: 100),
               opacity: showLoading ? 1 : 0,
