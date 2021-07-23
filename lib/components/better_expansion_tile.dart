@@ -13,10 +13,12 @@ class BetterExpansionTile extends StatefulWidget {
     this.trailing,
     this.initiallyExpanded: false,
     this.canExpand = true,
+    this.dense = false,
   })  : assert(initiallyExpanded != null),
         super(key: key);
 
   final Widget leading;
+  final bool dense;
   final Widget title;
   final ValueChanged<bool> onExpansionChanged;
   final Widget child;
@@ -114,6 +116,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
             data: new IconThemeData(color: _iconColor.evaluate(_easeInAnimation)),
             child: new ListTile(
               onTap: toggle,
+              dense: dense,
               leading: widget.leading,
               title: new DefaultTextStyle(
                 style: Theme.of(context).textTheme.subhead.copyWith(color: titleColor),
