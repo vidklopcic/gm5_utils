@@ -53,6 +53,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
   }
 
   Future<T> _doAction(Future action) async {
+    if (!mounted) return null;
     setState(() {
       showLoading = true;
     });
