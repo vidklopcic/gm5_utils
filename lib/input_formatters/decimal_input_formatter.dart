@@ -85,9 +85,20 @@ class DecimalTextInputFormatter extends TextInputFormatter {
         composing: TextRange.empty,
       );
     } else {
-      truncated = int.tryParse(truncated.replaceAll(separator, '.')).toString();
+      truncated = int.tryParse(truncated)?.toString() ?? '0';
       _lastValue = truncated;
-      return newValue.copyWith(text: truncated + suffix);
+      final selection = truncated == '0'
+          ? TextSelection(baseOffset: 0, extentOffset: 1)
+          : newValue.selection.copyWith(
+              baseOffset:
+                  newValue.selection.baseOffset.clamp(0, truncated.length),
+              extentOffset:
+                  newValue.selection.extentOffset.clamp(0, truncated.length),
+            );
+      return newValue.copyWith(
+        text: truncated + suffix,
+        selection: selection,
+      );
     }
   }
 

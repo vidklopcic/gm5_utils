@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/input_formatters/decimal_input_formatter.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/vidklopcic/.android/avd/Pixel_3a_API_30_x86.avd]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -22,6 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1ewuS1yIkwJZNzO1E8tSmRyN6UC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -30,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -61,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00020" summary="removed redundant callback from dropdown">
-      <created>1608466162730</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1608466162730</updated>
     </task>
     <task id="LOCAL-00021" summary="removed redundant callback from dropdown">
       <created>1608466342545</created>
@@ -405,13 +409,29 @@
       <option name="project" value="LOCAL" />
       <updated>1627029802860</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="apply formatting to int">
+      <created>1628498412266</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1628498412267</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add toggle method" />
     <MESSAGE value="typo" />
     <MESSAGE value="added loading overlay" />
     <MESSAGE value="add ignore pointer" />
@@ -436,34 +456,7 @@
     <MESSAGE value="fixed negative values for decimal formatter" />
     <MESSAGE value="add callAtStart option to throttle helper" />
     <MESSAGE value="add dense property" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dense property" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="563" y="207" key="CommitChangelistDialog2" timestamp="1627029802697">
-      <screen x="0" y="25" width="1792" height="1037" />
-    </state>
-    <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620461668413" />
-    <state x="563" y="207" key="CommitChangelistDialog2/0.25.1792.1037@0.25.1792.1037" timestamp="1627029802697" />
-    <state x="563" y="234" key="CommitChangelistDialog2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756402322" />
-    <state x="563" y="234" key="CommitChangelistDialog2/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624096857138" />
-    <state x="546" y="333" key="Vcs.Push.Dialog.v2" timestamp="1627029805625">
-      <screen x="0" y="25" width="1792" height="1037" />
-    </state>
-    <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620220317756" />
-    <state x="546" y="333" key="Vcs.Push.Dialog.v2/0.25.1792.1037@0.25.1792.1037" timestamp="1627029805625" />
-    <state x="546" y="350" key="Vcs.Push.Dialog.v2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756403987" />
-    <state x="546" y="350" key="Vcs.Push.Dialog.v2/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624096858552" />
-    <state x="592" y="346" width="696" height="490" key="find.popup" timestamp="1627029716979">
-      <screen x="0" y="25" width="1792" height="1037" />
-    </state>
-    <state x="592" y="346" width="696" height="490" key="find.popup/0.25.1792.1037@0.25.1792.1037" timestamp="1627029716979" />
-    <state x="592" y="364" width="696" height="486" key="find.popup/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624097579644" />
-    <state x="603" y="260" width="671" height="551" key="search.everywhere.popup" timestamp="1627029719164">
-      <screen x="0" y="25" width="1792" height="1037" />
-    </state>
-    <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620214414027" />
-    <state x="603" y="260" width="671" height="551" key="search.everywhere.popup/0.25.1792.1037@0.25.1792.1037" timestamp="1627029719164" />
-    <state x="603" y="273" width="671" height="581" key="search.everywhere.popup/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622731620532" />
-    <state x="603" y="273" width="671" height="581" key="search.everywhere.popup/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624097581403" />
+    <MESSAGE value="apply formatting to int" />
+    <option name="LAST_COMMIT_MESSAGE" value="apply formatting to int" />
   </component>
 </project>
