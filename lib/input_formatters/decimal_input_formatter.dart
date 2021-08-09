@@ -8,7 +8,12 @@ class DecimalTextInputFormatter extends TextInputFormatter {
 
   String _lastValue;
 
-  DecimalTextInputFormatter({this.ignoreRight = 0, this.decimalRange, this.separator = ',', this.min, this.max})
+  DecimalTextInputFormatter(
+      {this.ignoreRight = 0,
+      this.decimalRange,
+      this.separator = ',',
+      this.min,
+      this.max})
       : assert(decimalRange == null || decimalRange >= 0);
 
   final int decimalRange;
@@ -23,8 +28,10 @@ class DecimalTextInputFormatter extends TextInputFormatter {
           text:
               '-${_lastValue?.replaceAll('-', '') ?? (0.0).toStringAsFixed(decimalRange ?? 0).replaceAll('.', separator)}');
     String suffix = newValue.text.substring(newValue.text.length - ignoreRight);
-    newValue = newValue.copyWith(text: newValue.text.substring(0, newValue.text.length - ignoreRight));
-    oldValue = oldValue.copyWith(text: oldValue.text.substring(0, oldValue.text.length - ignoreRight));
+    newValue = newValue.copyWith(
+        text: newValue.text.substring(0, newValue.text.length - ignoreRight));
+    oldValue = oldValue.copyWith(
+        text: oldValue.text.substring(0, oldValue.text.length - ignoreRight));
 
     TextSelection newSelection = newValue.selection;
     String truncated = newValue.text.replaceAll('.', separator);
@@ -42,11 +49,13 @@ class DecimalTextInputFormatter extends TextInputFormatter {
           value = 0;
         } else if (newValue.text.length == 1) {
           value = double.tryParse(newValue.text);
-        } else if (newValue.selection.extentOffset == oldValue.selection.extentOffset) {
+        } else if (newValue.selection.extentOffset ==
+            oldValue.selection.extentOffset) {
           return newValue.copyWith(
             text: oldValue.text + suffix,
             selection: newValue.selection.copyWith(
-                baseOffset: newValue.selection.baseOffset + 1, extentOffset: newValue.selection.extentOffset + 1),
+                baseOffset: newValue.selection.baseOffset + 1,
+                extentOffset: newValue.selection.extentOffset + 1),
           );
         } else {
           return newValue.copyWith(text: oldValue.text + suffix);
@@ -57,13 +66,16 @@ class DecimalTextInputFormatter extends TextInputFormatter {
       if (value == null) {
         return oldValue.copyWith(text: oldValue.text + suffix);
       }
-      truncated = value.toStringAsFixed(decimalRange).replaceAll('.', separator);
+      truncated =
+          value.toStringAsFixed(decimalRange).replaceAll('.', separator);
 
       if (newValue.selection.baseOffset > truncated.length) {
-        newSelection = newValue.selection.copyWith(baseOffset: truncated.length);
+        newSelection =
+            newValue.selection.copyWith(baseOffset: truncated.length);
       }
       if (newValue.selection.extentOffset > truncated.length) {
-        newSelection = newValue.selection.copyWith(extentOffset: truncated.length);
+        newSelection =
+            newValue.selection.copyWith(extentOffset: truncated.length);
       }
 
       _lastValue = truncated;
@@ -72,10 +84,13 @@ class DecimalTextInputFormatter extends TextInputFormatter {
         selection: newSelection,
         composing: TextRange.empty,
       );
+    } else {
+      truncated = int.tryParse(truncated.replaceAll(separator, '.')).toString();
+      _lastValue = truncated;
+      return newValue.copyWith(text: truncated + suffix);
     }
-    _lastValue = truncated;
-    return newValue.copyWith(text: newValue.text + suffix);
   }
 
-  double get value => double.tryParse(_lastValue?.replaceAll(separator, '.') ?? '');
+  double get value =>
+      double.tryParse(_lastValue?.replaceAll(separator, '.') ?? '');
 }

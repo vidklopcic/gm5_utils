@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +26,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/components" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -45,6 +50,7 @@
       <recent name="$PROJECT_DIR$/lib/extended_functionality" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,13 +61,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add toggle mode to accordion">
-      <created>1608464907108</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1608464907108</updated>
     </task>
     <task id="LOCAL-00020" summary="removed redundant callback from dropdown">
       <created>1608466162730</created>
@@ -399,13 +398,19 @@
       <option name="project" value="LOCAL" />
       <updated>1624096857241</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add dense property">
+      <created>1627029802860</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1627029802860</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add default duration" />
     <MESSAGE value="add toggle method" />
     <MESSAGE value="typo" />
     <MESSAGE value="added loading overlay" />
@@ -430,52 +435,34 @@
     <MESSAGE value="add option to always transition" />
     <MESSAGE value="fixed negative values for decimal formatter" />
     <MESSAGE value="add callAtStart option to throttle helper" />
-    <option name="LAST_COMMIT_MESSAGE" value="add callAtStart option to throttle helper" />
+    <MESSAGE value="add dense property" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dense property" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="563" y="234" key="CommitChangelistDialog2" timestamp="1624096857138">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state x="563" y="207" key="CommitChangelistDialog2" timestamp="1627029802697">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
-    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530492697" />
     <state x="2596" y="241" key="CommitChangelistDialog2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620461668413" />
-    <state x="563" y="232" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012575295" />
+    <state x="563" y="207" key="CommitChangelistDialog2/0.25.1792.1037@0.25.1792.1037" timestamp="1627029802697" />
     <state x="563" y="234" key="CommitChangelistDialog2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756402322" />
     <state x="563" y="234" key="CommitChangelistDialog2/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624096857138" />
-    <state width="2518" height="491" key="GridCell.Tab.0.bottom" timestamp="1616000692637">
-      <screen x="1792" y="-29" width="2560" height="1417" />
+    <state x="546" y="333" key="Vcs.Push.Dialog.v2" timestamp="1627029805625">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
-    <state width="2518" height="491" key="GridCell.Tab.0.bottom/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state width="2518" height="491" key="GridCell.Tab.0.center" timestamp="1616000692637">
-      <screen x="1792" y="-29" width="2560" height="1417" />
-    </state>
-    <state width="2518" height="491" key="GridCell.Tab.0.center/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state width="2518" height="491" key="GridCell.Tab.0.left" timestamp="1616000692637">
-      <screen x="1792" y="-29" width="2560" height="1417" />
-    </state>
-    <state width="2518" height="491" key="GridCell.Tab.0.left/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state width="2518" height="491" key="GridCell.Tab.0.right" timestamp="1616000692637">
-      <screen x="1792" y="-29" width="2560" height="1417" />
-    </state>
-    <state width="2518" height="491" key="GridCell.Tab.0.right/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616000692637" />
-    <state x="546" y="350" key="Vcs.Push.Dialog.v2" timestamp="1624096858552">
-      <screen x="0" y="25" width="1792" height="1095" />
-    </state>
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1615530494532" />
     <state x="2572" y="392" key="Vcs.Push.Dialog.v2/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620220317756" />
-    <state x="546" y="349" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1616012578393" />
+    <state x="546" y="333" key="Vcs.Push.Dialog.v2/0.25.1792.1037@0.25.1792.1037" timestamp="1627029805625" />
     <state x="546" y="350" key="Vcs.Push.Dialog.v2/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622756403987" />
     <state x="546" y="350" key="Vcs.Push.Dialog.v2/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624096858552" />
-    <state x="592" y="364" width="696" height="486" key="find.popup" timestamp="1624097579644">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state x="592" y="346" width="696" height="490" key="find.popup" timestamp="1627029716979">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
-    <state x="2638" y="410" width="993" height="628" key="find.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1616743984071" />
+    <state x="592" y="346" width="696" height="490" key="find.popup/0.25.1792.1037@0.25.1792.1037" timestamp="1627029716979" />
     <state x="592" y="364" width="696" height="486" key="find.popup/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624097579644" />
-    <state x="603" y="273" width="671" height="581" key="search.everywhere.popup" timestamp="1624097581403">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state x="603" y="260" width="671" height="551" key="search.everywhere.popup" timestamp="1627029719164">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
-    <state x="603" y="272" width="671" height="582" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@0.23.1792.1097" timestamp="1616051525676" />
     <state x="2653" y="292" width="958" height="751" key="search.everywhere.popup/0.23.1792.1097/1792.-29.2560.1417@1792.-29.2560.1417" timestamp="1620214414027" />
-    <state x="603" y="272" width="670" height="581" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1617097678367" />
+    <state x="603" y="260" width="671" height="551" key="search.everywhere.popup/0.25.1792.1037@0.25.1792.1037" timestamp="1627029719164" />
     <state x="603" y="273" width="671" height="581" key="search.everywhere.popup/0.25.1792.1095/1792.-27.2560.1415@0.25.1792.1095" timestamp="1622731620532" />
     <state x="603" y="273" width="671" height="581" key="search.everywhere.popup/1792.-337.1920.1175/0.25.1792.1095@0.25.1792.1095" timestamp="1624097581403" />
   </component>
