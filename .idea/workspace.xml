@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/components/synced_text_form_field.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/loading_overlay.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/loading_overlay.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00022" summary="allow changing button alignment">
-      <created>1608466582508</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1608466582508</updated>
     </task>
     <task id="LOCAL-00023" summary="add barrier color to dropdown">
       <created>1608467215111</created>
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628501377949</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="check if mounted">
+      <created>1628506657365</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1628506657365</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -432,7 +432,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="typo" />
     <MESSAGE value="added loading overlay" />
     <MESSAGE value="add ignore pointer" />
     <MESSAGE value="fixed future type" />
@@ -457,6 +456,7 @@
     <MESSAGE value="add callAtStart option to throttle helper" />
     <MESSAGE value="add dense property" />
     <MESSAGE value="apply formatting to int" />
-    <option name="LAST_COMMIT_MESSAGE" value="apply formatting to int" />
+    <MESSAGE value="check if mounted" />
+    <option name="LAST_COMMIT_MESSAGE" value="check if mounted" />
   </component>
 </project>
