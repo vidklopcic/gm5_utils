@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/components/synced_text_form_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/synced_text_form_field.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add barrier color to dropdown">
-      <created>1608467215111</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1608467215111</updated>
     </task>
     <task id="LOCAL-00024" summary="add barrier dismissible to dropdown">
       <created>1608467387934</created>
@@ -416,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628506657365</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="add synced text form field">
+      <created>1629276206464</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1629276206464</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -432,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added loading overlay" />
     <MESSAGE value="add ignore pointer" />
     <MESSAGE value="fixed future type" />
     <MESSAGE value="fix whole number behaviour" />
@@ -457,6 +455,7 @@
     <MESSAGE value="add dense property" />
     <MESSAGE value="apply formatting to int" />
     <MESSAGE value="check if mounted" />
-    <option name="LAST_COMMIT_MESSAGE" value="check if mounted" />
+    <MESSAGE value="add synced text form field" />
+    <option name="LAST_COMMIT_MESSAGE" value="add synced text form field" />
   </component>
 </project>
