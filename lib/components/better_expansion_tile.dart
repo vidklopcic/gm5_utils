@@ -116,10 +116,10 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
             data: new IconThemeData(color: _iconColor.evaluate(_easeInAnimation)),
             child: new ListTile(
               onTap: toggle,
-              dense: dense,
+              dense: widget.dense,
               leading: widget.leading,
               title: new DefaultTextStyle(
-                style: Theme.of(context).textTheme.subhead.copyWith(color: titleColor),
+                style: Theme.of(context).textTheme.subtitle1.copyWith(color: titleColor),
                 child: widget.title,
               ),
               trailing: widget.trailing ??
@@ -147,11 +147,11 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
     final ThemeData theme = Theme.of(context);
     _borderColor.end = theme.dividerColor;
     _headerColor
-      ..begin = theme.textTheme.subhead.color
-      ..end = theme.accentColor;
+      ..begin = theme.textTheme.subtitle1.color
+      ..end = theme.colorScheme.secondary;
     _iconColor
       ..begin = theme.unselectedWidgetColor
-      ..end = theme.accentColor;
+      ..end = theme.colorScheme.secondary;
     _backgroundColor.end = widget.backgroundColor;
 
     final bool closed = !_isExpanded && _controller.isDismissed;

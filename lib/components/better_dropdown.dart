@@ -511,7 +511,7 @@ class _DropdownButtonState<T> extends State<BetterDropdownButton<T>> with Widget
     }
   }
 
-  TextStyle get _textStyle => widget.style ?? Theme.of(context).textTheme.subhead;
+  TextStyle get _textStyle => widget.style ?? Theme.of(context).textTheme.subtitle1;
 
   void _handleTap() {
     final RenderBox itemBox = context.findRenderObject();
