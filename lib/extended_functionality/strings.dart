@@ -16,6 +16,6 @@ extension StringExtension on String {
   String ellipsis(int maxLen, {String ellipsis = '...'}) {
     if (maxLen == null || ellipsis == null) return this;
     if (this.length <= maxLen - ellipsis.length) return this;
-    return this.substring(0, maxLen) + ellipsis;
+    return this.substring(0, maxLen - ellipsis.length) + ellipsis;
   }
 }

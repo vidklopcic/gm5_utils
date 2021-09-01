@@ -70,13 +70,6 @@
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
     </task>
-    <task id="LOCAL-00027" summary="add width and height to context">
-      <created>1608629641783</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1608629641783</updated>
-    </task>
     <task id="LOCAL-00028" summary="add default settings for delayed buidler">
       <created>1610983959536</created>
       <option name="number" value="00028" />
@@ -413,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630493418929</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="include ellipsis len">
+      <created>1630493948377</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1630493948377</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -429,7 +429,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add default delay" />
     <MESSAGE value="fx type casting" />
     <MESSAGE value="fix type casting" />
     <MESSAGE value="add mounted check for delayed_builder.dart" />
@@ -454,6 +453,7 @@
     <MESSAGE value="update material theme" />
     <MESSAGE value="added string extensions" />
     <MESSAGE value="return null on invalid params" />
-    <option name="LAST_COMMIT_MESSAGE" value="return null on invalid params" />
+    <MESSAGE value="include ellipsis len" />
+    <option name="LAST_COMMIT_MESSAGE" value="include ellipsis len" />
   </component>
 </project>
