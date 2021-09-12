@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/components/value_builder.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00029" summary="add mapSeparated">
-      <created>1610990131427</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1610990131427</updated>
     </task>
     <task id="LOCAL-00030" summary="add toMondayDate">
       <created>1611338151114</created>
@@ -416,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630494034580</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="added value builder">
+      <created>1631441459783</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1631441459783</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -432,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fx type casting" />
     <MESSAGE value="fix type casting" />
     <MESSAGE value="add mounted check for delayed_builder.dart" />
     <MESSAGE value="added catmull_rom interpolation, suffix formatter" />
@@ -457,6 +455,7 @@
     <MESSAGE value="added string extensions" />
     <MESSAGE value="return null on invalid params" />
     <MESSAGE value="include ellipsis len" />
-    <option name="LAST_COMMIT_MESSAGE" value="include ellipsis len" />
+    <MESSAGE value="added value builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added value builder" />
   </component>
 </project>
