@@ -40,9 +40,8 @@ class _ValueBuilderState<T> extends State<ValueBuilder<T>> {
 
   T _setValue(T value) {
     if (_value != value) {
-      setState(() {
-        _value = value;
-      });
+      _value = value;
+      WidgetsBinding.instance.addPostFrameCallback((timeStamp) => setState(() {}));
     }
     return value;
   }
