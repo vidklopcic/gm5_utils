@@ -72,13 +72,6 @@
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
     </task>
-    <task id="LOCAL-00030" summary="add toMondayDate">
-      <created>1611338151114</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1611338151114</updated>
-    </task>
     <task id="LOCAL-00031" summary="add cached value pattern">
       <created>1611572844071</created>
       <option name="number" value="00031" />
@@ -415,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631441459783</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="add isCompleted to future">
+      <created>1631442486894</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1631442486894</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -431,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix type casting" />
     <MESSAGE value="add mounted check for delayed_builder.dart" />
     <MESSAGE value="added catmull_rom interpolation, suffix formatter" />
     <MESSAGE value="alpha˚" />
@@ -456,6 +455,7 @@
     <MESSAGE value="return null on invalid params" />
     <MESSAGE value="include ellipsis len" />
     <MESSAGE value="added value builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="added value builder" />
+    <MESSAGE value="add isCompleted to future" />
+    <option name="LAST_COMMIT_MESSAGE" value="add isCompleted to future" />
   </component>
 </project>
