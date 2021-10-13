@@ -21,9 +21,9 @@ extension NullListExtension<T> on List<T> {
     return '$prefix${this.join('$delimiter$prefix')}';
   }
 
-  List<T> trySublist(int start, [int end, onError = const []]) {
+  List<T> trySublist(int start, [int end, List<T> onError]) {
     int len = length;
-    if (start >= len) return onError;
+    if (start >= len) return onError ?? <T>[];
     if (end > len) end = len;
     return sublist(start, end);
   }
