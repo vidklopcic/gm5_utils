@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add hoverable_default_text_style.dart">
-      <created>1611584005695</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1611584005695</updated>
     </task>
     <task id="LOCAL-00034" summary="typo">
       <created>1611584107544</created>
@@ -415,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631461809232</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="typo">
+      <created>1634138065714</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1634138065714</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -431,7 +429,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="alpha˚" />
     <MESSAGE value="add catmull_rom_spline.dart and linear gradient" />
     <MESSAGE value="update intl" />
     <MESSAGE value="price formatting fixes" />
@@ -456,6 +453,7 @@
     <MESSAGE value="add isCompleted to future" />
     <MESSAGE value="unused imports" />
     <MESSAGE value="fix setState during build" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix setState during build" />
+    <MESSAGE value="typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="typo" />
   </component>
 </project>

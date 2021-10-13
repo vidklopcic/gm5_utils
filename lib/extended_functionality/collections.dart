@@ -24,7 +24,7 @@ extension NullListExtension<T> on List<T> {
   List<T> trySublist(int start, [int end, List<T> onError]) {
     int len = length;
     if (start >= len) return onError ?? <T>[];
-    if (end > len) end = len;
+    if (end != null && end > len) end = len;
     return sublist(start, end);
   }
 
