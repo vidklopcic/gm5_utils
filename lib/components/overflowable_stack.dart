@@ -3,9 +3,9 @@ import 'package:flutter/rendering.dart';
 
 class OverflowableStack extends Stack {
   OverflowableStack({
-    Key key,
+    Key? key,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
-    TextDirection textDirection,
+    TextDirection? textDirection,
     StackFit fit = StackFit.loose,
     Clip clipBehavior = Clip.none,
     List<Widget> children = const <Widget>[],
@@ -31,9 +31,9 @@ class OverflowableStack extends Stack {
 
 class RenderStack2 extends RenderStack {
   RenderStack2({
-    List<RenderBox> children,
+    List<RenderBox>? children,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
-    TextDirection textDirection,
+    TextDirection? textDirection,
     StackFit fit = StackFit.loose,
     Clip clipBehavior = Clip.none,
   }) : super(
@@ -45,7 +45,7 @@ class RenderStack2 extends RenderStack {
         );
 
   @override
-  bool hitTest(BoxHitTestResult result, {Offset position}) {
+  bool hitTest(BoxHitTestResult result, {required Offset position}) {
     if (hitTestChildren(result, position: position) || hitTestSelf(position)) {
       result.add(BoxHitTestEntry(this, position));
       return true;

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class HoverableDefaultTextStyle extends StatefulWidget {
-  final Widget child;
-  final TextStyle style;
-  final TextStyle hoverStyle;
-  final TextAlign textAlign;
+  final Widget? child;
+  final TextStyle? style;
+  final TextStyle? hoverStyle;
+  final TextAlign? textAlign;
   final bool softWrap;
   final TextOverflow overflow;
-  final int maxLines;
+  final int? maxLines;
   final TextWidthBasis textWidthBasis;
-  final ui.TextHeightBehavior textHeightBehavior;
-  final Duration duration;
+  final ui.TextHeightBehavior? textHeightBehavior;
+  final Duration? duration;
   final Curve curve;
 
   const HoverableDefaultTextStyle({
-    Key key,
+    Key? key,
     this.style,
     this.hoverStyle,
     this.child,
@@ -42,8 +42,8 @@ class _HoverableDefaultTextStyleState extends State<HoverableDefaultTextStyle> {
       onEnter: (_) => setState(() => hovering = true),
       onExit: (_) => setState(() => hovering = false),
       child: AnimatedDefaultTextStyle(
-        style: hovering ? (widget.hoverStyle ?? widget.style.copyWith(fontWeight: FontWeight.bold)) : widget.style,
-        child: widget.child,
+        style: hovering ? (widget.hoverStyle ?? widget.style!.copyWith(fontWeight: FontWeight.bold)) : widget.style!,
+        child: widget.child!,
         textAlign: widget.textAlign,
         softWrap: widget.softWrap,
         overflow: widget.overflow,

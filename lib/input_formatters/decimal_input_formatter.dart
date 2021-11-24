@@ -2,11 +2,11 @@ import 'package:flutter/services.dart';
 
 class DecimalTextInputFormatter extends TextInputFormatter {
   final String separator;
-  final double min;
-  final double max;
+  final double? min;
+  final double? max;
   final int ignoreRight;
 
-  String _lastValue;
+  String? _lastValue;
 
   DecimalTextInputFormatter(
       {this.ignoreRight = 0,
@@ -16,7 +16,7 @@ class DecimalTextInputFormatter extends TextInputFormatter {
       this.max})
       : assert(decimalRange == null || decimalRange >= 0);
 
-  final int decimalRange;
+  final int? decimalRange;
 
   @override
   TextEditingValue formatEditUpdate(
@@ -42,8 +42,8 @@ class DecimalTextInputFormatter extends TextInputFormatter {
       truncated = parts.sublist(0, 2).join(separator);
     }
 
-    if (decimalRange != null && decimalRange > 0) {
-      double value;
+    if (decimalRange != null && decimalRange! > 0) {
+      double? value;
       if (!truncated.contains(separator)) {
         if (newValue.text.length == 0) {
           value = 0;
@@ -67,7 +67,7 @@ class DecimalTextInputFormatter extends TextInputFormatter {
         return oldValue.copyWith(text: oldValue.text + suffix);
       }
       truncated =
-          value.toStringAsFixed(decimalRange).replaceAll('.', separator);
+          value.toStringAsFixed(decimalRange!).replaceAll('.', separator);
 
       if (newValue.selection.baseOffset > truncated.length) {
         newSelection =
@@ -102,6 +102,6 @@ class DecimalTextInputFormatter extends TextInputFormatter {
     }
   }
 
-  double get value =>
+  double? get value =>
       double.tryParse(_lastValue?.replaceAll(separator, '.') ?? '');
 }

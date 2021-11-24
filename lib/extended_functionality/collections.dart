@@ -1,34 +1,34 @@
-extension NullListExtension<T> on List<T> {
-  T getOrNull(int index) {
+extension NullListExtension<T> on List<T?> {
+  T? getOrNull(int index) {
     if (length > index) {
       return this[index];
     }
     return null;
   }
 
-  T getOrFill(int index, [T element]) {
+  T? getOrFill(int index, [T? element]) {
     ensureIndex(index, element);
     return this[index];
   }
 
-  T getOr(int index, [T element]) {
+  T? getOr(int index, [T? element]) {
     if (length <= index) return element;
     return this[index];
   }
 
-  String prepend(String prefix, [String delimiter]) {
+  String prepend(String prefix, [String? delimiter]) {
     delimiter ??= '';
     return '$prefix${this.join('$delimiter$prefix')}';
   }
 
-  List<T> trySublist(int start, [int end, List<T> onError]) {
+  List<T?> trySublist(int start, [int? end, List<T>? onError]) {
     int len = length;
     if (start >= len) return onError ?? <T>[];
     if (end != null && end > len) end = len;
     return sublist(start, end);
   }
 
-  void ensureIndex(int l, [T element]) {
+  void ensureIndex(int l, [T? element]) {
     while (length <= l) add(element);
   }
 

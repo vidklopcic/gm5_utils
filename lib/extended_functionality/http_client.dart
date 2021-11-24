@@ -16,42 +16,42 @@ class HttpClientWithHeaders extends http.BaseClient {
   }
 
   @override
-  Future<Response> get(url, {Map<String, String> headers}) {
+  Future<Response> get(url, {Map<String, String>? headers}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.get(url, headers: headers);
   }
 
   @override
-  Future<Response> post(url, {Map<String, String> headers, body, Encoding encoding}) {
+  Future<Response> post(url, {Map<String, String>? headers, body, Encoding? encoding}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.post(url, headers: headers, encoding: encoding);
   }
 
   @override
-  Future<Response> patch(url, {Map<String, String> headers, body, Encoding encoding}) {
+  Future<Response> patch(url, {Map<String, String>? headers, body, Encoding? encoding}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.patch(url, headers: headers, encoding: encoding);
   }
 
   @override
-  Future<Response> put(url, {Map<String, String> headers, body, Encoding encoding}) {
+  Future<Response> put(url, {Map<String, String>? headers, body, Encoding? encoding}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.put(url, headers: headers, body: body, encoding: encoding);
   }
 
   @override
-  Future<Response> head(url, {Map<String, String> headers}) {
+  Future<Response> head(url, {Map<String, String>? headers}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.head(url, headers: headers);
   }
 
   @override
-  Future<Response> delete(url, {Map<String, String> headers, Object body, Encoding encoding}) {
+  Future<Response> delete(url, {Map<String, String>? headers, Object? body, Encoding? encoding}) {
     headers = _mergeHeaders(headers, defaultHeaders);
     return _httpClient.delete(url, headers: headers);
   }
 
-  Map<String, String> _mergeHeaders(Map<String, String> headers, Map<String, String> add) {
+  Map<String, String> _mergeHeaders(Map<String, String>? headers, Map<String, String> add) {
     headers ??= <String, String>{};
     headers.addAll(add);
     return headers;

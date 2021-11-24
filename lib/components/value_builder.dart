@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 typedef _ValueBuilder<T> = Widget Function(BuildContext context, T Function(T value), T value);
 
 class ValueBuilder<T> extends StatefulWidget {
-  final T initialValue;
-  final _ValueBuilder<T> builder;
+  final T? initialValue;
+  final _ValueBuilder<T>? builder;
 
   const ValueBuilder({
-    Key key,
+    Key? key,
     this.builder,
     this.initialValue,
   }) : super(key: key);
@@ -16,12 +16,12 @@ class ValueBuilder<T> extends StatefulWidget {
   _ValueBuilderState createState() => _ValueBuilderState<T>();
 }
 
-class _ValueBuilderState<T> extends State<ValueBuilder<T>> {
-  T _value;
+class _ValueBuilderState<T> extends State<ValueBuilder<T?>> {
+  T? _value;
 
   @override
   Widget build(BuildContext context) {
-    return widget.builder(context, _setValue, _value);
+    return widget.builder!(context, _setValue, _value);
   }
 
   @override
@@ -31,17 +31,17 @@ class _ValueBuilderState<T> extends State<ValueBuilder<T>> {
   }
 
   @override
-  void didUpdateWidget(covariant ValueBuilder<T> oldWidget) {
+  void didUpdateWidget(covariant ValueBuilder<T?> oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.initialValue != widget.initialValue) {
       _value = widget.initialValue;
     }
   }
 
-  T _setValue(T value) {
+  T? _setValue(T? value) {
     if (_value != value) {
       _value = value;
-      WidgetsBinding.instance.addPostFrameCallback((timeStamp) => setState(() {}));
+      WidgetsBinding.instance!.addPostFrameCallback((timeStamp) => setState(() {}));
     }
     return value;
   }

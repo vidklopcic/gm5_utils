@@ -1,8 +1,8 @@
 class CachedValue<T> {
-  T _val;
+  T? _val;
   T Function() _generate;
 
-  T get val {
+  T? get val {
     _val ??= _generate();
     return _val;
   }

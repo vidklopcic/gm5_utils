@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 class DelayedBuilder extends StatefulWidget {
   static Duration defaultDelay = Duration(milliseconds: 200);
   static Duration defaultDuration = Duration(milliseconds: 300);
-  static Widget defaultPlaceholder;
+  static Widget? defaultPlaceholder;
 
-  final WidgetBuilder builder;
-  final Duration delay;
-  final Duration fadeDuration;
-  final Widget placeholder;
+  final WidgetBuilder? builder;
+  final Duration? delay;
+  final Duration? fadeDuration;
+  final Widget? placeholder;
   final bool stillLoading;
   final bool alwaysTransition;
 
   const DelayedBuilder(
-      {Key key,
+      {Key? key,
       this.builder,
       this.delay,
       this.placeholder,
@@ -35,7 +35,7 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
     return AnimatedSwitcher(
       child: showPlaceholder
           ? (widget.placeholder ?? DelayedBuilder.defaultPlaceholder ?? Offstage())
-          : widget.builder(context),
+          : widget.builder!(context),
       duration: widget.fadeDuration ?? DelayedBuilder.defaultDuration,
       transitionBuilder: (child, animation) => FadeTransition(
         opacity: animation,

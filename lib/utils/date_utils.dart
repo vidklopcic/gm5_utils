@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 class DateUtils {
   bool _initialized = false;
 
-  String formatDate(DateTime date, {String locale = 'sl_SI', String pattern = 'd.M.y'}) {
+  String? formatDate(DateTime? date, {String locale = 'sl_SI', String pattern = 'd.M.y'}) {
     if (!_initialized) {
       initializeDateFormatting(locale);
       _initialized = true;

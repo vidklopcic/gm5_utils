@@ -5,17 +5,17 @@ typedef void GM5AccordionChange(int index, GM5AccordionItem item);
 
 class GM5Accordion extends StatefulWidget {
   final List<GM5AccordionItem> items;
-  final GM5AccordionChange onChange;
+  final GM5AccordionChange? onChange;
   final Alignment collapseAlignment;
-  final double animationDuration;
-  final Color headerColor;
+  final double? animationDuration;
+  final Color? headerColor;
   final int initialIndex;
   final bool toggleMode;
   final double spacing;
 
   const GM5Accordion({
-    Key key,
-    @required this.items,
+    Key? key,
+    required this.items,
     this.onChange,
     this.spacing = 2,
     this.animationDuration,
@@ -30,7 +30,7 @@ class GM5Accordion extends StatefulWidget {
 }
 
 class _GM5AccordionState extends State<GM5Accordion> {
-  int selected;
+  int? selected;
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +67,7 @@ class _GM5AccordionState extends State<GM5Accordion> {
             type: widget.headerColor == null ? MaterialType.transparency : MaterialType.canvas,
             color: widget.headerColor,
             child: item.headerBuilder != null
-                ? item.headerBuilder(context, () => selectItem(index), expanded)
+                ? item.headerBuilder!(context, () => selectItem(index), expanded)
                 : InkWell(
                     onTap: () => selectItem(index),
                     child: item.header,
@@ -79,7 +79,7 @@ class _GM5AccordionState extends State<GM5Accordion> {
         child: AnimatedContainer(
           curve: Curves.easeInOutCubic,
           height: expanded ? contentHeight : 0,
-          duration: widget.animationDuration ?? Duration(milliseconds: 300),
+          duration: widget.animationDuration as Duration? ?? Duration(milliseconds: 300),
           child: OverflowBox(
             minWidth: width,
             maxWidth: width,
@@ -118,10 +118,10 @@ typedef GM5AccordionHeaderBuilder = Widget Function(BuildContext context, VoidCa
 
 class GM5AccordionItem {
   final double headerHeight;
-  final Widget header;
-  final GM5AccordionHeaderBuilder headerBuilder;
+  final Widget? header;
+  final GM5AccordionHeaderBuilder? headerBuilder;
   final Widget content;
 
-  GM5AccordionItem({this.headerHeight = 44, this.header, @required this.content, this.headerBuilder})
+  GM5AccordionItem({this.headerHeight = 44, this.header, required this.content, this.headerBuilder})
       : assert(headerBuilder != null || header != null);
 }

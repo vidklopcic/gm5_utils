@@ -20,15 +20,15 @@ class CatmullRomSpline {
     updateControlPoints(points);
   }
 
-  double alpha;
-  List<Point2D> controlPoints;
-  int stepsPerSegment;
-  List<Point2D> interpolatedPoints;
+  double? alpha;
+  late List<Point2D> controlPoints;
+  late int stepsPerSegment;
+  List<Point2D>? interpolatedPoints;
   bool updateRequired = true;
-  bool closed;
+  late bool closed;
 
   static List<Point2D> createPoints(int n) {
-    List<Point2D> points = List<Point2D>();
+    List<Point2D> points = [];
     for (int i = 0; i < n; i++) {
       double value = i / n + 0.00001;
       points.add(Point2D(value, value));
@@ -70,7 +70,7 @@ class CatmullRomSpline {
     updateRequired = true;
   }
 
-  List<Point2D> getInterpolatedPoints() {
+  List<Point2D>? getInterpolatedPoints() {
     validatePoints();
     return interpolatedPoints;
   }
@@ -121,11 +121,11 @@ class CatmullRomSpline {
   }
 
   Point2D sub(Point2D p0, Point2D p1) {
-    return Point2D(p0.x - p1.x, p0.y - p1.y);
+    return Point2D(p0.x! - p1.x!, p0.y! - p1.y!);
   }
 
   Point2D add(Point2D p0, Point2D p1) {
-    return Point2D(p0.x + p1.x, p0.y + p1.y);
+    return Point2D(p0.x! + p1.x!, p0.y! + p1.y!);
   }
 
   void _updateInterpolatedPoints(
@@ -139,19 +139,19 @@ class CatmullRomSpline {
     double t2 = 2;
     double t3 = 3;
     if (alpha != 0) {
-      double exponent = (alpha * 0.5);
-      double dx01 = (p1.x - p0.x);
-      double dy01 = (p1.y - p0.y);
+      double exponent = (alpha! * 0.5);
+      double dx01 = (p1.x! - p0.x!);
+      double dy01 = (p1.y! - p0.y!);
       double d01 = ((dx01 * dx01) + (dy01 * dy01));
       t1 = (t0 + Math.pow(d01, exponent));
 
-      double dx12 = (p2.x - p1.x);
-      double dy12 = (p2.y - p1.y);
+      double dx12 = (p2.x! - p1.x!);
+      double dy12 = (p2.y! - p1.y!);
       double d12 = ((dx12 * dx12) + (dy12 * dy12));
       t2 = (t1 + Math.pow(d12, exponent));
 
-      double dx23 = (p3.x - p2.x);
-      double dy23 = (p3.y - p2.y);
+      double dx23 = (p3.x! - p2.x!);
+      double dy23 = (p3.y! - p2.y!);
       double d23 = ((dx23 * dx23) + (dy23 * dy23));
       t3 = (t2 + Math.pow(d23, exponent));
 
@@ -162,21 +162,21 @@ class CatmullRomSpline {
       int interpolatedPointIndex = ((index * stepsPerSegment) + i);
       Point2D interpolatedPoint = interpolate(p0, p1, p2, p3, t0, t1, t2, t3,
           t1 + (t * (t2 - t1)));
-      interpolatedPoints[interpolatedPointIndex].setLocation(interpolatedPoint.x, interpolatedPoint.y);
+      interpolatedPoints![interpolatedPointIndex].setLocation(interpolatedPoint.x, interpolatedPoint.y);
     }
     
   }
 
   Point2D interpolate(Point2D p0, Point2D p1, Point2D p2, Point2D p3, double t0,
       double t1, double t2, double t3, double t) {
-    double x0 = p0.x;
-    double y0 = p0.y;
-    double x1 = p1.x;
-    double y1 = p1.y;
-    double x2 = p2.x;
-    double y2 = p2.y;
-    double x3 = p3.x;
-    double y3 = p3.y;
+    double x0 = p0.x!;
+    double y0 = p0.y!;
+    double x1 = p1.x!;
+    double y1 = p1.y!;
+    double x2 = p2.x!;
+    double y2 = p2.y!;
+    double x3 = p3.x!;
+    double y3 = p3.y!;
     double invDt01 = (1 / (t1 - t0)).toDouble();
     double invDt12 = (1 / (t2 - t1)).toDouble();
     double invDt23 = (1 / (t3 - t2)).toDouble();

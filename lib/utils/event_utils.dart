@@ -4,7 +4,7 @@ class EventUtils {
   Map debounceTimeouts = {};
   Map throttleMethods = {};
 
-  void debounce(int timeoutMs, Function target, {key, List arguments}) {
+  void debounce(int timeoutMs, Function target, {key, List? arguments}) {
     key = key ?? target;
     if (debounceTimeouts.containsKey(key)) {
       debounceTimeouts[key].cancel();
@@ -17,7 +17,7 @@ class EventUtils {
     debounceTimeouts[key] = timer;
   }
 
-  void throttle(int period, Function target, {key, List arguments, bool callAtStart = false}) {
+  void throttle(int period, Function target, {key, List? arguments, bool callAtStart = false}) {
     key = key ?? target;
     if (debounceTimeouts[key]?.isActive ?? false) {
       throttleMethods[key] = target;
@@ -36,7 +36,7 @@ class EventUtils {
     debounceTimeouts[key] = timer;
   }
 
-  void dropAbove(int period, Function target, {key, List arguments}) {
+  void dropAbove(int period, Function target, {key, List? arguments}) {
     key = key ?? target;
     if (debounceTimeouts[key]?.isActive ?? false) {
       return;

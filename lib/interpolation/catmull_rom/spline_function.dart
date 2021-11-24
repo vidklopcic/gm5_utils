@@ -3,13 +3,13 @@ import 'point2d.dart';
 import 'dart:collection';
 
 class SplineFunction {
-  CatmullRomSpline mSpline;
-  double mLastY;
+  late CatmullRomSpline mSpline;
+  double? mLastY;
   List<Point2D> mControlPoints = [];
-  List<Point2D> mInterpolatedPoints;
+  List<Point2D>? mInterpolatedPoints;
   final int mPerSegment;
 
-  SplineFunction(HashMap<double, double> points, this.mPerSegment, {bool linear: false, double alpha=0.5}) {
+  SplineFunction(HashMap<double?, double?> points, this.mPerSegment, {bool linear: false, double alpha=0.5}) {
     if (points.length < 2) {
       mControlPoints.clear();
       mControlPoints.add(Point2D(-1, -1));
@@ -26,7 +26,7 @@ class SplineFunction {
   }
 
   static SplineFunction fromPoints2D(List<Point2D> points, int nSteps) {
-    HashMap<double, double> newPoints = HashMap();
+    HashMap<double?, double?> newPoints = HashMap();
     for (Point2D point in points) newPoints[point.x] = point.y;
     return SplineFunction(newPoints, nSteps);
   }
@@ -41,17 +41,17 @@ class SplineFunction {
 
     // find the first point where x > position
     int index = 0;
-    for (int i = 0; i < mInterpolatedPoints.length; i++) {
-      if (position < mInterpolatedPoints[i].x) {
+    for (int i = 0; i < mInterpolatedPoints!.length; i++) {
+      if (position < mInterpolatedPoints![i].x!) {
         index = i;
         break;
       }
     }
 
     // linear between this and previous point
-    double k = (mInterpolatedPoints[index].y - mInterpolatedPoints[index - 1].y) /
-        (mInterpolatedPoints[index].x - mInterpolatedPoints[index - 1].x);
-    double n = mInterpolatedPoints[index].y - k * mInterpolatedPoints[index].x;
+    double k = (mInterpolatedPoints![index].y! - mInterpolatedPoints![index - 1].y!) /
+        (mInterpolatedPoints![index].x! - mInterpolatedPoints![index - 1].x!);
+    double n = mInterpolatedPoints![index].y! - k * mInterpolatedPoints![index].x!;
     double result = k * position + n;
 
     if (result < 0) result = 0;
@@ -60,14 +60,14 @@ class SplineFunction {
   }
 
   void makeFunction() {
-    List<Point2D> interpolatedPoints = mSpline.getInterpolatedPoints();
+    List<Point2D>? interpolatedPoints = mSpline.getInterpolatedPoints();
     // interpolatedPoints = removeNonMonotonic(interpolatedPoints);
     // fitBounds(interpolatedPoints);
     mInterpolatedPoints = interpolatedPoints;
   }
 
   List<Point2D> removeNonMonotonic(List<Point2D> points) {
-    List<double> xVals = [];
+    List<double?> xVals = [];
     for (Point2D point in points) {
       xVals.add(point.x);
     }
@@ -75,7 +75,7 @@ class SplineFunction {
     for (int i = 0; i < (mControlPoints.length - 1); i++) {
       int intervalStart = (((i - offset) * mPerSegment) + offset);
       for (int j = intervalStart; j < (intervalStart + mPerSegment); j++) {
-        if (points[j].x > points[j + 1].x) {
+        if (points[j].x! > points[j + 1].x!) {
           for (int g = 0; g < (mPerSegment - 1); g++) {
             points.remove(intervalStart + 1);
           }
@@ -85,11 +85,11 @@ class SplineFunction {
       }
     }
     for (int i = 1; i < points.length; i++) {
-      while ((i < points.length) && (points[i - 1].x >= points[i].x)) {
+      while ((i < points.length) && (points[i - 1].x! >= points[i].x!)) {
         points.removeAt(i);
       }
     }
-    List<double> x = List.filled(points.length, null);
+    List<double?> x = List.filled(points.length, null);
     int i = 0;
     for (Point2D point in points) {
       x[i++] = point.x;
@@ -100,21 +100,21 @@ class SplineFunction {
   void fitBounds(List<Point2D> points) {
     for (int i = 0; i < points.length; i++) {
       Point2D point = points[i];
-      if (point.y < (-1)) {
+      if (point.y! < (-1)) {
         points[i] = Point2D(point.x, -1);
       } else {
-        if (point.y > 1) {
+        if (point.y! > 1) {
           points[i] = Point2D(point.x, 1);
         }
       }
     }
   }
 
-  List<Point2D> pointsToPoint2DfromHashMap(HashMap<double, double> points) {
-    List<double> keys = points.keys.toList();
+  List<Point2D> pointsToPoint2DfromHashMap(HashMap<double?, double?> points) {
+    List<double?> keys = points.keys.toList();
     keys.sort();
     List<Point2D> result = [];
-    for (double point_x in keys) {
+    for (double? point_x in keys) {
       result.add(Point2D(point_x, points[point_x]));
     }
     return result;
@@ -128,7 +128,7 @@ class SplineFunction {
     return result;
   }
 
-  List<Point2D> getPoints() {
+  List<Point2D>? getPoints() {
     return mInterpolatedPoints;
   }
 }

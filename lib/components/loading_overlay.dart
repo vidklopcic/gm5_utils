@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-typedef LoadingOverlayBuilder<T> = Widget Function(BuildContext context, Future<T> Function(Future action));
+typedef LoadingOverlayBuilder<T> = Widget Function(
+    BuildContext context, Future<T> Function(Future action));
 
 class LoadingOverlay<T> extends StatefulWidget {
   static Duration defaultDuration = Duration(milliseconds: 300);
-  static Widget defaultPlaceholder;
-  final LoadingOverlayBuilder<T> builder;
+  static Widget? defaultPlaceholder;
+  final LoadingOverlayBuilder<T>? builder;
   final Duration fadeDuration;
-  final Widget placeholder;
-  final Function(Exception) onError;
+  final Widget? placeholder;
+  final Function(Exception)? onError;
   final bool ignorePointer;
 
   const LoadingOverlay({
-    Key key,
+    Key? key,
     this.builder,
     this.placeholder,
     this.fadeDuration = Duration.zero,
@@ -24,7 +25,7 @@ class LoadingOverlay<T> extends StatefulWidget {
   _LoadingOverlayState createState() => _LoadingOverlayState<T>();
 }
 
-class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
+class _LoadingOverlayState<T> extends State<LoadingOverlay<T?>> {
   bool showLoading = false;
 
   @override
@@ -32,12 +33,14 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
     final placeholder = widget.placeholder ?? LoadingOverlay.defaultPlaceholder ?? Offstage();
     return Stack(
       children: [
-        widget.builder(context, _doAction),
+        widget.builder!(context, _doAction),
         Positioned.fill(
           child: IgnorePointer(
             ignoring: widget.ignorePointer && !showLoading,
             child: AnimatedOpacity(
-              duration: widget.fadeDuration ?? LoadingOverlay.defaultDuration ?? Duration(milliseconds: 100),
+              duration: widget.fadeDuration ??
+                  LoadingOverlay.defaultDuration ??
+                  Duration(milliseconds: 100),
               opacity: showLoading ? 1 : 0,
               child: placeholder,
             ),
@@ -52,7 +55,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
     super.initState();
   }
 
-  Future<T> _doAction(Future action) async {
+  Future<T?> _doAction(Future action) async {
     if (!mounted) return null;
     setState(() {
       showLoading = true;
@@ -67,7 +70,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
       });
 
       if (widget.onError != null)
-        widget.onError(e);
+        widget.onError!(e as Exception);
       else {
         throw (e);
       }
@@ -77,6 +80,6 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T>> {
       showLoading = false;
     });
 
-    return result as T;
+    return result as T?;
   }
 }

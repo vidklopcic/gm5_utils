@@ -4,9 +4,9 @@ const Duration _kExpand = const Duration(milliseconds: 200);
 
 class BetterExpansionTile extends StatefulWidget {
   const BetterExpansionTile({
-    Key key,
+    Key? key,
     this.leading,
-    @required this.title,
+    required this.title,
     this.backgroundColor,
     this.onExpansionChanged,
     this.child,
@@ -17,13 +17,13 @@ class BetterExpansionTile extends StatefulWidget {
   })  : assert(initiallyExpanded != null),
         super(key: key);
 
-  final Widget leading;
+  final Widget? leading;
   final bool dense;
   final Widget title;
-  final ValueChanged<bool> onExpansionChanged;
-  final Widget child;
-  final Color backgroundColor;
-  final Widget trailing;
+  final ValueChanged<bool>? onExpansionChanged;
+  final Widget? child;
+  final Color? backgroundColor;
+  final Widget? trailing;
   final bool initiallyExpanded;
   final bool canExpand;
 
@@ -32,14 +32,14 @@ class BetterExpansionTile extends StatefulWidget {
 }
 
 class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  CurvedAnimation _easeOutAnimation;
-  CurvedAnimation _easeInAnimation;
-  ColorTween _borderColor;
-  ColorTween _headerColor;
-  ColorTween _iconColor;
-  ColorTween _backgroundColor;
-  Animation<double> _iconTurns;
+  late AnimationController _controller;
+  late CurvedAnimation _easeOutAnimation;
+  late CurvedAnimation _easeInAnimation;
+  late ColorTween _borderColor;
+  late ColorTween _headerColor;
+  late ColorTween _iconColor;
+  late ColorTween _backgroundColor;
+  late Animation<double> _iconTurns;
 
   bool _isExpanded = false;
 
@@ -93,14 +93,14 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
         PageStorage.of(context)?.writeState(context, _isExpanded);
       });
       if (widget.onExpansionChanged != null) {
-        widget.onExpansionChanged(_isExpanded);
+        widget.onExpansionChanged!(_isExpanded);
       }
     }
   }
 
-  Widget _buildChildren(BuildContext context, Widget child) {
+  Widget _buildChildren(BuildContext context, Widget? child) {
     final Color borderSideColor = _borderColor.evaluate(_easeOutAnimation) ?? Colors.transparent;
-    final Color titleColor = _headerColor.evaluate(_easeInAnimation);
+    final Color? titleColor = _headerColor.evaluate(_easeInAnimation);
 
     return new Container(
       decoration: new BoxDecoration(
@@ -119,7 +119,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
               dense: widget.dense,
               leading: widget.leading,
               title: new DefaultTextStyle(
-                style: Theme.of(context).textTheme.subtitle1.copyWith(color: titleColor),
+                style: Theme.of(context).textTheme.subtitle1!.copyWith(color: titleColor),
                 child: widget.title,
               ),
               trailing: widget.trailing ??
@@ -147,7 +147,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
     final ThemeData theme = Theme.of(context);
     _borderColor.end = theme.dividerColor;
     _headerColor
-      ..begin = theme.textTheme.subtitle1.color
+      ..begin = theme.textTheme.subtitle1!.color
       ..end = theme.colorScheme.secondary;
     _iconColor
       ..begin = theme.unselectedWidgetColor

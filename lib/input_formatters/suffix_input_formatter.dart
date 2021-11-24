@@ -5,7 +5,7 @@ class SuffixInputFormatter extends TextInputFormatter {
   final String suffix;
   final int suffixLen;
 
-  SuffixInputFormatter({@required this.suffix}) : suffixLen = suffix.length;
+  SuffixInputFormatter({required this.suffix}) : suffixLen = suffix.length;
 
   @override
   TextEditingValue formatEditUpdate(

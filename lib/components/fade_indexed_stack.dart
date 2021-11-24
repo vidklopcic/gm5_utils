@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class FadeIndexedStack extends StatefulWidget {
-  final int index;
-  final List<Widget> children;
+  final int? index;
+  final List<Widget>? children;
   final Duration duration;
 
   const FadeIndexedStack({
-    Key key,
+    Key? key,
     this.index,
     this.children,
     this.duration = const Duration(
@@ -19,7 +19,7 @@ class FadeIndexedStack extends StatefulWidget {
 }
 
 class _FadeIndexedStackState extends State<FadeIndexedStack> with SingleTickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   void didUpdateWidget(FadeIndexedStack oldWidget) {
@@ -48,7 +48,7 @@ class _FadeIndexedStackState extends State<FadeIndexedStack> with SingleTickerPr
       opacity: _controller,
       child: IndexedStack(
         index: widget.index,
-        children: widget.children,
+        children: widget.children!,
       ),
     );
   }
