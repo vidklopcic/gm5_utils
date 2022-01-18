@@ -7,7 +7,7 @@ class LoadingOverlay<T> extends StatefulWidget {
   static Duration defaultDuration = Duration(milliseconds: 300);
   static Widget? defaultPlaceholder;
   final LoadingOverlayBuilder<T>? builder;
-  final Duration fadeDuration;
+  final Duration? fadeDuration;
   final Widget? placeholder;
   final Function(Exception)? onError;
   final bool ignorePointer;
@@ -38,9 +38,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T?>> {
           child: IgnorePointer(
             ignoring: widget.ignorePointer && !showLoading,
             child: AnimatedOpacity(
-              duration: widget.fadeDuration ??
-                  LoadingOverlay.defaultDuration ??
-                  Duration(milliseconds: 100),
+              duration: widget.fadeDuration ?? LoadingOverlay.defaultDuration,
               opacity: showLoading ? 1 : 0,
               child: placeholder,
             ),
