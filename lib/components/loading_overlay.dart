@@ -36,7 +36,7 @@ class _LoadingOverlayState<T> extends State<LoadingOverlay<T?>> {
         widget.builder!(context, _doAction),
         Positioned.fill(
           child: IgnorePointer(
-            ignoring: widget.ignorePointer && !showLoooading,
+            ignoring: widget.ignorePointer && !showLoading,
             child: AnimatedOpacity(
               duration: widget.fadeDuration ?? LoadingOverlay.defaultDuration,
               opacity: showLoading ? 1 : 0,
