@@ -11,7 +11,11 @@ class SubscriptionsMixin {
 
   void cancelSubscriptions() {
     for (StreamSubscription subscription in _subscriptions) {
-      subscription?.cancel();
+      subscription.cancel();
     }
+  }
+
+  void addSub(StreamSubscription subscription) {
+    _subscriptions.add(subscription);
   }
 }
