@@ -17,6 +17,15 @@ extension ContextExtensions on BuildContext {
     return MediaQuery.of(this).size.height;
   }
 
+  double get shortSide {
+    return MediaQuery.of(this).size.shortestSide;
+  }
+
+  double get longSide {
+    return MediaQuery.of(this).size.longestSide;
+  }
+
   ThemeData get theme => Theme.of(this);
+
   TextTheme get textTheme => Theme.of(this).textTheme;
 }
