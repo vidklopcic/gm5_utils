@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class NullableText extends StatelessWidget {
-  final String data;
+  final String? data;
   final TextStyle? style;
   final StrutStyle? strutStyle;
   final TextAlign? textAlign;
@@ -17,7 +17,7 @@ class NullableText extends StatelessWidget {
   final ui.TextHeightBehavior? textHeightBehavior;
 
   NullableText(
-    String this.data, {
+    this.data, {
     Key? key,
     this.style,
     this.strutStyle,
@@ -37,7 +37,7 @@ class NullableText extends StatelessWidget {
   Widget build(BuildContext context) {
     if (data == null) return Offstage();
     return Text(
-      this.data,
+      this.data!,
       key: key,
       style: style,
       strutStyle: strutStyle,
