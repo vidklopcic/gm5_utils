@@ -76,13 +76,6 @@
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
     </task>
-    <task id="LOCAL-00041" summary="added loading overlay">
-      <created>1612091242568</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1612091242568</updated>
-    </task>
     <task id="LOCAL-00042" summary="add ignore pointer">
       <created>1612091752908</created>
       <option name="number" value="00042" />
@@ -419,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665484185205</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="fix null checks">
+      <created>1668080099557</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1668080099557</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -435,7 +435,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="remove html import" />
     <MESSAGE value="add keyboard_visibility_builder.dart" />
     <MESSAGE value="immediately show content if already loaded" />
     <MESSAGE value="add option to always transition" />
@@ -460,6 +459,7 @@
     <MESSAGE value="fix null safety bug" />
     <MESSAGE value="addSub method" />
     <MESSAGE value="add long / short sided shortcut" />
-    <option name="LAST_COMMIT_MESSAGE" value="add long / short sided shortcut" />
+    <MESSAGE value="fix null checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix null checks" />
   </component>
 </project>

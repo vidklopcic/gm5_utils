@@ -41,6 +41,7 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
         opacity: animation,
         child: child,
       ),
+      layoutBuilder: _asLayoutBuilder,
     );
   }
 
@@ -51,5 +52,14 @@ class _DelayedBuilderState extends State<DelayedBuilder> {
       if (mounted) setState(() => showContent = true);
     });
     showContent = !widget.alwaysTransition && !widget.stillLoading;
+  }
+
+  static Widget _asLayoutBuilder(Widget? currentChild, List<Widget> previousChildren) {
+    return Stack(
+      children: <Widget>[
+        ...previousChildren,
+        if (currentChild != null) currentChild,
+      ],
+    );
   }
 }
