@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="improve as layout builder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00042" summary="add ignore pointer">
-      <created>1612091752908</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1612091752908</updated>
     </task>
     <task id="LOCAL-00043" summary="fixed future type">
       <created>1612116642543</created>
@@ -419,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668080099557</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="improve as layout builder">
+      <created>1672822654640</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1672822654640</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -435,7 +433,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add keyboard_visibility_builder.dart" />
     <MESSAGE value="immediately show content if already loaded" />
     <MESSAGE value="add option to always transition" />
     <MESSAGE value="fixed negative values for decimal formatter" />
@@ -460,6 +457,7 @@
     <MESSAGE value="addSub method" />
     <MESSAGE value="add long / short sided shortcut" />
     <MESSAGE value="fix null checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix null checks" />
+    <MESSAGE value="improve as layout builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve as layout builder" />
   </component>
 </project>

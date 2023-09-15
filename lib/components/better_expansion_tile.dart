@@ -11,11 +11,10 @@ class BetterExpansionTile extends StatefulWidget {
     this.onExpansionChanged,
     this.child,
     this.trailing,
-    this.initiallyExpanded: false,
+    this.initiallyExpanded=false,
     this.canExpand = true,
     this.dense = false,
-  })  : assert(initiallyExpanded != null),
-        super(key: key);
+  })  : super(key: key);
 
   final Widget? leading;
   final bool dense;
@@ -55,7 +54,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
     _iconTurns = new Tween<double>(begin: 0.0, end: 0.5).animate(_easeInAnimation);
     _backgroundColor = new ColorTween();
 
-    _isExpanded = PageStorage.of(context)?.readState(context) ?? widget.initiallyExpanded;
+    _isExpanded = PageStorage.of(context).readState(context) ?? widget.initiallyExpanded;
     if (_isExpanded) _controller.value = 1.0;
   }
 
@@ -90,7 +89,7 @@ class BetterExpansionTileState extends State<BetterExpansionTile> with SingleTic
               // Rebuild without widget.children.
             });
           });
-        PageStorage.of(context)?.writeState(context, _isExpanded);
+        PageStorage.of(context).writeState(context, _isExpanded);
       });
       if (widget.onExpansionChanged != null) {
         widget.onExpansionChanged!(_isExpanded);

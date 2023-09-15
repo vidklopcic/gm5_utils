@@ -9,7 +9,7 @@ class SplineFunction {
   List<Point2D>? mInterpolatedPoints;
   final int mPerSegment;
 
-  SplineFunction(HashMap<double?, double?> points, this.mPerSegment, {bool linear: false, double alpha=0.5}) {
+  SplineFunction(HashMap<double?, double?> points, this.mPerSegment, {bool linear=false, double alpha=0.5}) {
     if (points.length < 2) {
       mControlPoints.clear();
       mControlPoints.add(Point2D(-1, -1));
