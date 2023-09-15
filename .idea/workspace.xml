@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="improve as layout builder" />
+    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/loading_overlay.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/loading_overlay.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00043" summary="fixed future type">
-      <created>1612116642543</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1612116642543</updated>
     </task>
     <task id="LOCAL-00044" summary="fixed future type">
       <created>1612774412389</created>
@@ -417,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672822654640</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="bump sdk version">
+      <created>1694779444353</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1694779444353</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -433,7 +437,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="immediately show content if already loaded" />
     <MESSAGE value="add option to always transition" />
     <MESSAGE value="fixed negative values for decimal formatter" />
     <MESSAGE value="add callAtStart option to throttle helper" />
@@ -458,6 +461,7 @@
     <MESSAGE value="add long / short sided shortcut" />
     <MESSAGE value="fix null checks" />
     <MESSAGE value="improve as layout builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve as layout builder" />
+    <MESSAGE value="bump sdk version" />
+    <option name="LAST_COMMIT_MESSAGE" value="bump sdk version" />
   </component>
 </project>

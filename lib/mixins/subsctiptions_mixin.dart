@@ -1,6 +1,6 @@
 import 'dart:async';
 
-class SubscriptionsMixin {
+mixin SubscriptionsMixin {
   List<StreamSubscription> _subscriptions = [];
 
   StreamSubscription listen<T>(Stream stream, void Function(T) callback, {Function? onError}) {

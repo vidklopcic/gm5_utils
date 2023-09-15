@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 typedef LoadingOverlayBuilder<T> = Widget Function(
-    BuildContext context, Future<T> Function(Future action));
+    BuildContext context, Future<T?> Function(Future action));
 
 class LoadingOverlay<T> extends StatefulWidget {
   static Duration defaultDuration = Duration(milliseconds: 300);
