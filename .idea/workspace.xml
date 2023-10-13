@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/loading_overlay.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/loading_overlay.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mixins/subsctiptions_mixin.dart" afterDir="false" />
-    </list>
+    <list default="true" id="78bcf5ba-dd63-4656-a0cc-b3885052b6f8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595244972035</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fixed future type">
-      <created>1612774412389</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1612774412389</updated>
     </task>
     <task id="LOCAL-00045" summary="fix whole number behaviour">
       <created>1612854283854</created>
@@ -421,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694779444353</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="fix null-safety typo, bump Flutter SDK">
+      <created>1694786181434</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1694786181434</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -437,7 +433,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add option to always transition" />
     <MESSAGE value="fixed negative values for decimal formatter" />
     <MESSAGE value="add callAtStart option to throttle helper" />
     <MESSAGE value="add dense property" />
@@ -462,6 +457,7 @@
     <MESSAGE value="fix null checks" />
     <MESSAGE value="improve as layout builder" />
     <MESSAGE value="bump sdk version" />
-    <option name="LAST_COMMIT_MESSAGE" value="bump sdk version" />
+    <MESSAGE value="fix null-safety typo, bump Flutter SDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix null-safety typo, bump Flutter SDK" />
   </component>
 </project>
