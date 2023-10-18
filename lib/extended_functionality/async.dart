@@ -18,3 +18,20 @@ extension FutureExtensions<T> on Future<T> {
     });
   }
 }
+
+
+extension ListFutureExtension<T> on Future<List<T>> {
+  Future<T> firstOr(T fallback) {
+    return this.then((value) {
+      if (value.isEmpty) return fallback;
+      return value.first;
+    });
+  }
+
+  Future<T?> get first {
+    return this.then((value) {
+      if (value.isEmpty) return null;
+      return value.first;
+    });
+  }
+}
